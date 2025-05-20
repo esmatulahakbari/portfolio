@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact information for Esmatullah Akbari, web developer portfolio.">
+    <title>Esmatullah Akbari - Contact</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Esmatullah Akbari</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="contact.html" class="active">Contact Info</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="contact">
+            <h2>Personal Information</h2>
+            <hr>
+            <img src="./E.Akbari.jpg" alt="Portrait of Esmatullah Akbari" height="150">
+            <address>
+                <h3>Email Address</h3>
+                <p><a href="mailto:es.akbari.ak@gmail.com">es.akbari.ak@gmail.com</a></p>
+                <h3>Phone</h3>
+                <p><a href="tel:+93792013520">+93 792013520</a></p>
+                <h3>Home Address</h3>
+                <p>Herat, Afghanistan</p>
+                <h3>WhatsApp</h3>
+                <p><a href="https://wa.me/+93792013520" aria-label="Contact via WhatsApp"><img src="./Picture1.gif" alt="WhatsApp icon" height="40"> WhatsApp</a></p>
+                <h3>Telegram</h3>
+                <p>Scan or click the QR code to connect on Telegram:</p>
+                <a href="https://telegram.dog/E_Akbari520"><img src="./Code.jpg" alt="Telegram QR code" height="100"></a>
+                
+            </address>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Esmatullah Akbari. All rights reserved.</p>
+    </footer>
+</body><script src="./script.js"></script>
+
+<form id="contact-form" action=https://formspree.io/f/mnndrgpk method="post" aria-labelledby="contact-form-title">
+    <h3 id="contact-form-title">Send a Message</h3>
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" required aria-required="true">
+    <label for="email">Email</label>
+    <input type="email" id="email" name="_replyto" required aria-required="true">
+    <label for="message">Message</label>
+    <textarea id="message" name="message" required aria-required="true"></textarea>
+    <button type="submit">Send</button>
+</form>
