@@ -3,65 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Certificates and achievements of Esmatullah Akbari, web developer portfolio.">
+    <meta name="description" content="گواهینامه‌ها و دستاوردهای عصمت الله اکبری، نمایش‌دهنده صلاحیت‌های حرفه‌ای و آموزش‌ها.">
     <meta name="author" content="Esmatullah Akbari">
-    <meta name="keywords" content="web developer, portfolio, Esmatullah Akbari, certificates, achievements">
+    <meta name="keywords" content="توسعه‌دهنده وب, پرتفولیو, عصمت الله اکبری, گواهینامه‌ها, دستاوردها">
     <meta name="robots" content="index, follow">
-    <title>Esmatullah Akbari - Certificates</title>
+    <title data-lang-key="title-certificates">Esmatullah Akbari - Certificates</title>
     <link rel="icon" type="image/x-icon" href="./favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Noto+Nastaliq+Urdu&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <header>
-        <h1>Esmatullah Akbari</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="Contact.html">Contact Info</a></li>
-            </ul>
-        </nav>
+        <div class="header-container">
+            <h1 data-lang-key="name">Esmatullah Akbari</h1>
+            <nav class="nav-container">
+                <button class="hamburger" aria-label="Toggle navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="nav-links">
+                    <a href="index.html" data-lang-key="nav-home" class="nav-link">Home</a>
+                    <a href="skills.html" data-lang-key="nav-skills" class="nav-link">Skills</a>
+                    <a href="certificates.html" data-lang-key="nav-certificates" class="nav-link">Certificates</a>
+                    <a href="contact.html" data-lang-key="nav-contact" class="nav-link">Contact</a>
+                </div>
+                <div class="language-toggle">
+                    <select id="language-select" aria-label="Select language">
+                        <option value="en">English</option>
+                        <option value="fa">فارسی</option>
+                    </select>
+                </div>
+            </nav>
+        </div>
     </header>
     <main>
-        <section id="certificates" aria-labelledby="certificates-title" class="section-hidden">
-            <h2 id="certificates-title">Certificates & Achievements</h2>
+        <section id="certificates" class="section-hidden">
+            <h2 data-lang-key="certificates">Certificates & Achievements</h2>
             <hr>
             <ul>
-                <li>Project Team Management & Communication Training at ASEWO-Herat</li>
-                <li>Empowering Youth Leaders (ECOSOC) at UN Women-United Nations Office</li>
-                <li>Advanced Network Security at AWDP-Herat</li>
-                <li>English for Communication Skills at World English Institute-USA</li>
-                <li>Human Rights Monitoring at USIP-Herat</li>
-                <li>WASH Training (WSP) at DACAAR-Herat</li>
-                <li>ICT Training (Ms. PWE) at USAID-AWDP</li>
-                <li>Research Methodology Training at IWA-Herat</li>
-                <li>English Language Skills at SDROA-USA</li>
-                <li>Senior First Grade Talented Students at Herat University</li>
-                <li>Computer: ICDL Package at ELCLC Training Center-Herat</li>
-                <li>Talented Senior Graduates of Herat University</li>
-                <li>Data Collection Methodology at DACAAR-Herat</li>
-                <li>Professional Teaching and Training at OSAA-Herat</li>
-                <li>Management Skills at Herat University-Herat</li>
-                <li>ESSAY Titled: Resilince in Education: Coping Strategies of Afghan Students in Times of Crisis</li> 
-                <li>Certified Senior EFL Teacher & at WOU</li>
-                <li>Certified Technical Secretary at Online Puplication Athurity-WOU</li>
+                <li data-lang-key="cert-1">Project Team Management & Communication Training at ASEWO-Herat</li>
+                <li data-lang-key="cert-2">Empowering Youth Leaders (ECOSOC) at UN Women-United Nations Office</li>
+                <li data-lang-key="cert-3">Advanced Network Security at AWDP-Herat</li>
+                <li data-lang-key="cert-4">English for Communication Skills at World English Institute-USA</li>
+                <li data-lang-key="cert-5">Human Rights Monitoring at USIP-Herat</li>
+                <li data-lang-key="cert-6">WASH Training (WSP) at DACAAR-Herat</li>
+                <li data-lang-key="cert-7">ICT Training (Ms. PWE) at USAID-AWDP</li>
+                <li data-lang-key="cert-8">Research Methodology Training at IWA-Herat</li>
+                <li data-lang-key="cert-9">English Language Skills at SDROA-USA</li>
+                <li data-lang-key="cert-10">Senior First Grade Talented Students at Herat University</li>
+                <li data-lang-key="cert-11">Computer: ICDL Package at ELCLC Training Center-Herat</li>
+                <li data-lang-key="cert-12">Talented Senior Graduates of Herat University</li>
+                <li data-lang-key="cert-13">Data Collection Methodology at DACAAR-Herat</li>
+                <li data-lang-key="cert-14">Professional Teaching and Training at OSAA-Herat</li>
+                <li data-lang-key="cert-15">Management Skills at Herat University-Herat</li>
+                <li data-lang-key="cert-16">ESSAY Titled: Resilience in Education: Coping Strategies of Afghan Students in Times of Crisis</li>
+                <li data-lang-key="cert-17">Certified Senior EFL Teacher at WOU</li>
+                <li data-lang-key="cert-18">Certified Technical Secretary at Online Publication Authority-WOU</li>
             </ul>
         </section>
-        <h2>
-            
-        </h2>
     </main>
     <footer>
-        <p>© 2025 Esmatullah Akbari. All rights reserved.</p>
+        <p data-lang-key="footer">© 2025 Esmatullah Akbari. All rights reserved.</p>
     </footer>
     <script src="./script.js"></script>
 </body>
 </html>
-<nav>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="Skills.html">Skills</a></li>
-        <li><a href="Contact.html">Contact Info</a></li>
-        <li><a href="Certificates.html">Achievements / Certificates</a></li>
-    </ul>
-</nav>
-<link rel="stylesheet" href="./style.css">

@@ -3,146 +3,141 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Professional portfolio of Esmatullah Akbari, showcasing education, work experience, and skills as a web developer.">
-    <title>Esmatullah Akbari - Portfolio</title>
+    <meta name="description" content="پرتفولیوی حرفه‌ای عصمت الله اکبری، نمایش‌دهنده تحصیلات، تجربه کاری و مهارت‌های توسعه وب.">
+    <meta name="author" content="Esmatullah Akbari">
+    <meta name="keywords" content="توسعه‌دهنده وب, پرتفولیو, عصمت الله اکبری, مهارت‌ها, تماس">
+    <meta name="robots" content="index, follow">
+    <title data-lang-key="title">Esmatullah Akbari - Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Noto+Nastaliq+Urdu&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <header>
-        <h1>Esmatullah Akbari</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="Skills.html" class="active">Skills</a></li>
-                <li><a href="Certificates.html">Certificates & Trainings</a></li>
-                <li><a href="Contact.html">Contact Info</a></li>
-            </ul>
-        </nav>
+        <div class="header-container">
+            <h1 data-lang-key="name">Esmatullah Akbari</h1>
+            <nav class="nav-container">
+                <button class="hamburger" aria-label="Toggle navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="nav-links">
+                    <a href="index.html" data-lang-key="nav-home" class="nav-link">Home</a>
+                    <a href="skills.html" data-lang-key="nav-skills" class="nav-link">Skills</a>
+                    <a href="certificates.html" data-lang-key="nav-certificates" class="nav-link">Certificates</a>
+                    <a href="contact.html" data-lang-key="nav-contact" class="nav-link">Contact</a>
+                </div>
+                <div class="language-toggle">
+                    <select id="language-select" aria-label="Select language">
+                        <option value="en">English</option>
+                        <option value="fa">فارسی</option>
+                    </select>
+                </div>
+            </nav>
+        </div>
     </header>
     <main>
-       <section id="Welocome">
-                <h2 data-lang-key="welcome">Welcome to My Portfolio</h2>
-
-                <p data-lang-key="about">I'm Esmatullah Akbari, a multifaceted professional based in Herat, Afghanistan, with expertise in education, administration, communication, MEAL (Monitoring, Evaluation, Accountability, and Learning), and web development. With a strong foundation in English language instruction and academic leadership, I’ve also contributed to organizational growth through administrative coordination and results-based monitoring systems. My experience in communication and MEAL has helped me ensure transparency, impact assessment, and community engagement in development projects.</p>
-                <p data-lang-key="about">Alongside my work in education and humanitarian sectors, I’m passionate about technology. I’ve developed several websites using HTML, CSS, and JavaScript, and I enjoy using my technical skills to design innovative tools and solutions for educational and community development.</p>
-                <p data-lang-key="about">I'm always eager to learn, grow, and contribute to meaningful, multidisciplinary projects that make a difference.</p>
+        <section id="welcome" class="section-hidden">
+            <h2 data-lang-key="welcome">Welcome to My Portfolio</h2>
+            <p data-lang-key="about-1">I'm Esmatullah Akbari, a multifaceted professional based in Herat, Afghanistan, with expertise in education, administration, communication, MEAL (Monitoring, Evaluation, Accountability, and Learning), and web development. With a strong foundation in English language instruction and academic leadership, I’ve also contributed to organizational growth through administrative coordination and results-based monitoring systems. My experience in communication and MEAL has helped me ensure transparency, impact assessment, and community engagement in development projects.</p>
+            <p data-lang-key="about-2">Alongside my work in education and humanitarian sectors, I’m passionate about technology. I’ve developed several websites using HTML, CSS, and JavaScript, and I enjoy using my technical skills to design innovative tools and solutions for educational and community development.</p>
+            <p data-lang-key="about-3">I'm always eager to learn, grow, and contribute to meaningful, multidisciplinary projects that make a difference.</p>
         </section>
-        <section id="education">
-            <h2>Education</h2>
+        <section id="education" class="section-hidden">
+            <h2 data-lang-key="education">Education</h2>
             <ul>
-                <li>Bachelor of Arts, English Language & Literature - Herat University (2019-2023)
-                    <p>Grade: 92% (A)</p>
-                </li>
-                <li>High School Graduated - Sultan Ghiasuddin Ghori High School (2007-2018)</li>
+                <li data-lang-key="edu-1">Bachelor of Arts, English Language & Literature - Herat University (2019-2023)<br>Grade: 92% (A)</li>
+                <li data-lang-key="edu-2">High School Graduated - Sultan Ghiasuddin Ghori High School (2007-2018)</li>
             </ul>
         </section>
-        <section id="experience">
-            <h2>Work Experience</h2>
+        <section id="experience" class="section-hidden">
+            <h2 data-lang-key="experience">Work Experience</h2>
             <ul>
                 <li>
-                    <h3>Head of the English Department & Teacher - WOU</h3>
-                    <p>June 2024 - Present (Voluntary)</p>
+                    <h3 data-lang-key="exp-1-title">Head of the English Department & Teacher - WOU</h3>
+                    <p data-lang-key="exp-1-date">June 2024 - Present (Voluntary)</p>
                     <ul>
-                        <li>Led departmental strategy, planning, and operations.</li>
-                        <li>Oversaw academic programs and ensured quality delivery.</li>
-                        <li>Managed faculty recruitment, development, and performance.</li>
-                        <li>Addressed student needs and promoted academic support.</li>
-                        <li>Ensured compliance with standards, budgets, and reporting.</li>
+                        <li data-lang-key="exp-1-1">Led departmental strategy, planning, and operations.</li>
+                        <li data-lang-key="exp-1-2">Oversaw academic programs and ensured quality delivery.</li>
+                        <li data-lang-key="exp-1-3">Managed faculty recruitment, development, and performance.</li>
+                        <li data-lang-key="exp-1-4">Addressed student needs and promoted academic support.</li>
+                        <li data-lang-key="exp-1-5">Ensured compliance with standards, budgets, and reporting.</li>
                     </ul>
                 </li>
                 <li>
-                    <h3> Project Field Monitor - IWA - USAID</h3>
-                    <p>Aug 2024 - Feb 2025</p>
+                    <h3 data-lang-key="exp-2-title">Project Field Monitor - IWA - USAID</h3>
+                    <p data-lang-key="exp-2-date">Aug 2024 - Feb 2025</p>
                     <ul>
-                        <li>Coordinated with authorities and partners for site access and approvals.</li>
-                        <li>Conducted field visits to project sites for monitoring and data collection.</li>
-                        <li>Used digital tools to collect, translate, and enter qualitative and quantitative data.</li>
-                        <li>Ensured data accuracy, completeness, and confidentiality following protocols.</li>
-                        <li>Reported issues and followed guidance from project and data quality leads.</li>
+                        <li data-lang-key="exp-2-1">Coordinated with authorities and partners for site access and approvals.</li>
+                        <li data-lang-key="exp-2-2">Conducted field visits to project sites for monitoring and data collection.</li>
+                        <li data-lang-key="exp-2-3">Used digital tools to collect, translate, and enter qualitative and quantitative data.</li>
+                        <li data-lang-key="exp-2-4">Ensured data accuracy, completeness, and confidentiality following protocols.</li>
+                        <li data-lang-key="exp-2-5">Reported issues and followed guidance from project and data quality leads.</li>
                     </ul>
                 </li>
                 <li>
-                    <h3>Admin Assistant - DSON</h3>
-                    <p>Jan 2024 - Jul 2024</p>
+                    <h3 data-lang-key="exp-3-title">Admin Assistant - DSON</h3>
+                    <p data-lang-key="exp-3-date">Jan 2024 - Jul 2024</p>
                     <ul>
-                        <li>Oversaw daily office operations, including procurement of supplies and maintenance of office equipment.</li>
-                        <li>Organized meetings, workshops, and training sessions by managing all logistical arrangements and preparing required documentation.</li>
-                        <li>Ensured proper filing and archiving of administrative documents in both hard and soft formats.</li>
-                        <li>Liaised with government agencies and partner organizations on administrative matters.</li>
-                        <li>Supported the Provincial Manager in implementing organizational policies and procedures.</li>
+                        <li data-lang-key="exp-3-1">Oversaw daily office operations, including procurement of supplies and maintenance of office equipment.</li>
+                        <li data-lang-key="exp-3-2">Organized meetings, workshops, and training sessions by managing all logistical arrangements and preparing required documentation.</li>
+                        <li data-lang-key="exp-3-3">Ensured proper filing and archiving of administrative documents in both hard and soft formats.</li>
+                        <li data-lang-key="exp-3-4">Liaised with government agencies and partner organizations on administrative matters.</li>
+                        <li data-lang-key="exp-3-5">Supported the Provincial Manager in implementing organizational policies and procedures.</li>
                     </ul>
                 </li>
                 <li>
-                    <h3>Communication Officer - DSON</h3>
-                    <p>Jan 2023 - Dec 2023</p>
+                    <h3 data-lang-key="exp-4-title">Communication Officer - DSON</h3>
+                    <p data-lang-key="exp-4-date">Jan 2023 - Dec 2023</p>
                     <ul>
-                        <li>Developed and executed communication strategies aligned with organizational goals.</li>
-                        <li>Created and managed content across social media, reports, newsletters, and the website.</li>
-                        <li>Built media relationships and coordinated press coverage to promote initiatives.</li>
-                        <li>Engaged stakeholders through effective messaging and event communications.</li>
-                        <li>Monitored communication performance and ensured consistent branding.</li>
+                        <li data-lang-key="exp-4-1">Developed and executed communication strategies aligned with organizational goals.</li>
+                        <li data-lang-key="exp-4-2">Created and managed content across social media, reports, newsletters, and the website.</li>
+                        <li data-lang-key="exp-4-3">Built media relationships and coordinated press coverage to promote initiatives.</li>
+                        <li data-lang-key="exp-4-4">Engaged stakeholders through effective messaging and event communications.</li>
+                        <li data-lang-key="exp-4-5">Monitored communication performance and ensured consistent branding.</li>
                     </ul>
                 </li>
                 <li>
-                    <h3>Community Mobilizer - ASEWO</h3>
-                    <p>Jan 2022 - Dec 2022</p>
+                    <h3 data-lang-key="exp-5-title">Community Mobilizer - ASEWO</h3>
+                    <p data-lang-key="exp-5-date">Jan 2022 - Dec 2022</p>
                     <ul>
-                        <li>Mobilized communities to raise awareness and encourage participation in project activities.</li>
-                        <li>Supervised Community Facilitators to ensure effective implementation at the village level.</li>
-                        <li>Collected and reported data using digital tools like ODK/KOBO for informed decision-making.</li>
-                        <li>Supported formation of community structures, with a focus on women's participation and leadership.</li>
-                        <li>Coordinated with local stakeholders and ensured compliance with village-level governance structures.</li>
+                        <li data-lang-key="exp-5-1">Mobilized communities to raise awareness and encourage participation in project activities.</li>
+                        <li data-lang-key="exp-5-2">Supervised Community Facilitators to ensure effective implementation at the village level.</li>
+                        <li data-lang-key="exp-5-3">Collected and reported data using digital tools like ODK/KOBO for informed decision-making.</li>
+                        <li data-lang-key="exp-5-4">Supported formation of community structures, with a focus on women's participation and leadership.</li>
+                        <li data-lang-key="exp-5-5">Coordinated with local stakeholders and ensured compliance with village-level governance structures.</li>
                     </ul>
                 </li>
                 <li>
-                    <h3>Research Officer - ASLO</h3>
-                    <p>June 2021 - Dec 2021</p>
+                    <h3 data-lang-key="exp-6-title">Research Officer - ASLO</h3>
+                    <p data-lang-key="exp-6-date">June 2021 - Dec 2021</p>
                     <ul>
-                        <li>Participated in training to understand project objectives and data collection tools.</li>
-                        <li>Coordinated with local authorities and communities for conducting FGDs in Salma Dam area.</li>
-                        <li>Collected qualitative data through FGDs, including photos, audio, and video documentation.</li>
-                        <li>Transcribed and translated FGD data into English and prepared participant documentation.</li>
-                        <li>Completed and submitted reports and forms in line with ASLO project requirements.</li>
+                        <li data-lang-key="exp-6-1">Participated in training to understand project objectives and data collection tools.</li>
+                        <li data-lang-key="exp-6-2">Coordinated with local authorities and communities for conducting FGDs in Salma Dam area.</li>
+                        <li data-lang-key="exp-6-3">Collected qualitative data through FGDs, including photos, audio, and video documentation.</li>
+                        <li data-lang-key="exp-6-4">Transcribed and translated FGD data into English and prepared participant documentation.</li>
+                        <li data-lang-key="exp-6-5">Completed and submitted reports and forms in line with ASLO project requirements.</li>
                     </ul>
                 </li>
             </ul>
         </section>
-        <section id="Achievements / Cerrtificates">
-            <h2>Achievements, Trainings & Pojects</h2>
-            <p><a href="./Certificates.html">🥇Achievements / Cerrtificates🥇</a></p>
-            <p><a href="https://hopebridge-academy.github.io/HBA">🏤Sample Poject🏤</a></p>
+        <section id="achievements" class="section-hidden">
+            <h2 data-lang-key="achievements">Projects</h2>
+            <p><a href="https://hopebridge-academy.github.io/HBA" data-lang-key="project-link">🏤 Sample Project</a></p>
         </section>
-        <section id="hobbies">
-            <h2>Hobbies & Interests</h2>
+        <section id="hobbies" class="section-hidden">
+            <h2 data-lang-key="hobbies">Hobbies & Interests</h2>
             <ul>
-                <li>Body Building</li>
-                <li>Driving</li>
-                <li>Reading Books</li>
+                <li data-lang-key="hobby-1">Body Building</li>
+                <li data-lang-key="hobby-2">Driving</li>
+                <li data-lang-key="hobby-3">Reading Books</li>
             </ul>
         </section>
     </main>
     <footer>
-        <p>&copy; 2025 Esmatullah Akbari. All rights reserved.</p>
+        <p data-lang-key="footer">© 2025 Esmatullah Akbari. All rights reserved.</p>
     </footer>
+    <script src="./script.js"></script>
 </body>
 </html>
-<script src="./script.js"></script>
-<nav>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="Skills.html">Skills</a></li>
-        <li><a href="Contact.html">Contact Info</a></li>
-        <li><a href="Certificates.html">Achievements / Certificates</a></li>
-    </ul>
-</nav>
-<link rel="stylesheet" href="./style.css">
-<head>
-    <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Esmatullah Akbari's professional web developer portfolio showcasing skills, experience, and contact information.">
-<meta name="author" content="Esmatullah Akbari">
-<meta name="keywords" content="web developer, portfolio, Esmatullah Akbari, skills, contact">
-<meta name="robots" content="index, follow">
-<title>Esmatullah Akbari - Web Developer Portfolio</title>
-<link rel="icon" type="image/x-icon" href="./favicon.ico">
-</head>
