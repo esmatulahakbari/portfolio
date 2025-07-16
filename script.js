@@ -20,11 +20,11 @@ const translations = {
         "nav-certificates": "Certificates",
         "nav-contact": "Contact",
         welcome: "Welcome to My Portfolio",
-        "about-1": "I'm Esmatullah Akbari, a multifaceted professional based in Herat, Afghanistan, with expertise in education, administration, communication, MEAL (Monitoring, Evaluation, Accountability, and Learning), research, data collections and web development. With a strong foundation in English language instruction and academic leadership, I’ve also contributed to organizational growth through administrative coordination and results-based monitoring systems. My experience in communication and MEAL has helped me ensure transparency, impact assessment, and community engagement in development projects.",
+        "about-1": "I'm Esmatullah Akbari, a multifaceted professional based in Herat, Afghanistan, with expertise in education, administration, communication, MEAL (Monitoring, Evaluation, Accountability, and Learning), and web development. With a strong foundation in English language instruction and academic leadership, I’ve also contributed to organizational growth through administrative coordination and results-based monitoring systems. My experience in communication and MEAL has helped me ensure transparency, impact assessment, and community engagement in development projects.",
         "about-2": "Alongside my work in education and humanitarian sectors, I’m passionate about technology. I’ve developed several websites using HTML, CSS, and JavaScript, and I enjoy using my technical skills to design innovative tools and solutions for educational and community development.",
         "about-3": "I'm always eager to learn, grow, and contribute to meaningful, multidisciplinary projects that make a difference.",
         education: "Education",
-        "edu-1": "Bachelor of Arts, English Language & Literature - Herat University (2019-2023)<br>Grade: 92% (A)",
+        "edu-1": "Bachelor of Arts, English Language & Literature - Faculty of Education, Herat University (2019-2023)<br>Grade: 92% (A)",
         "edu-2": "High School Graduated - Sultan Ghiasuddin Ghori High School (2007-2018)",
         experience: "Work Experience",
         "exp-1-title": "Head of the English Department & Teacher - Woman Online University (WOU)",
@@ -70,7 +70,7 @@ const translations = {
         "exp-6-4": "Transcribed and translated FGD data into English and prepared participant documentation.",
         "exp-6-5": "Completed and submitted reports and forms in line with ASLO project requirements.",
         achievements: "Projects",
-        "project-link": "🏤 Sample Project",
+        "project-link": "View Project",
         hobbies: "Hobbies & Interests",
         "hobby-1": "Body Building",
         "hobby-2": "Driving",
@@ -150,7 +150,20 @@ const translations = {
         "contact-form-error-email": "Please enter a valid email address.",
         "contact-form-success": "Message sent successfully!",
         "contact-form-error": "Failed to send message. Please try again.",
-        footer: "© 2025 Esmatullah Akbari. All rights reserved."
+        footer: "© 2025 Esmatullah Akbari. All rights reserved.",
+        "title-resume": "Esmatullah Akbari - Resume",
+        resume: "Resume",
+        "nav-resume": "Resume",
+        "download-resume": "Download Resume",
+        about: "About Me",
+        "hero-text": "Explore my journey as a multifaceted professional in education, web development, and community development.",
+        "view-resume": "View My Resume",
+        "project-1-title": "HopeBridge Academy",
+        "project-1-desc": "A web platform for educational resources and community engagement.",
+        "project-2-title": "Coming Soon",
+        "project-2-desc": "Stay tuned for more exciting projects!",
+        "project-link-soon": "Learn More",
+        "dark-mode-toggle": "Toggle Dark Mode"
     },
     fa: {
         title: "عصمت الله اکبری - پرتفولیو",
@@ -163,7 +176,7 @@ const translations = {
         "nav-certificates": "گواهینامه‌ها",
         "nav-contact": "تماس",
         welcome: "به پرتفولیوی من خوش آمدید",
-        "about-1": "من عصمت الله اکبری هستم، یک حرفه‌ای چندجانبه مستقر در هرات، افغانستان، با تخصص در آموزش، مدیریت، ارتباطات، نظارت و ارزیابی، تحقیق، جمع آوری داده ها و توسعه وب. با پایه‌ای قوی در آموزش زبان انگلیسی و رهبری آکادمیک، همچنین از طریق هماهنگی‌های مدیریتی و سیستم‌های نظارت مبتنی بر نتایج به رشد سازمانی کمک کرده‌ام. تجربه‌ام در ارتباطات و نظارت و ارزیابی به من کمک کرده تا شفافیت، ارزیابی تأثیر، و مشارکت جامعه در پروژه‌های توسعه را تضمین کنم.",
+        "about-1": "من عصمت الله اکبری هستم، یک حرفه‌ای چندجانبه مستقر در هرات، افغانستان، با تخصص در آموزش، مدیریت، ارتباطات، نظارت و ارزیابی، و توسعه وب. با پایه‌ای قوی در آموزش زبان انگلیسی و رهبری آکادمیک، همچنین از طریق هماهنگی‌های مدیریتی و سیستم‌های نظارت مبتنی بر نتایج به رشد سازمانی کمک کرده‌ام. تجربه‌ام در ارتباطات و نظارت و ارزیابی به من کمک کرده تا شفافیت، ارزیابی تأثیر، و مشارکت جامعه در پروژه‌های توسعه را تضمین کنم.",
         "about-2": "در کنار فعالیت‌هایم در بخش‌های آموزشی و بشردوستانه، به فناوری علاقه‌مندم. چندین وب‌سایت با استفاده از HTML، CSS و JavaScript توسعه داده‌ام و از به‌کارگیری مهارت‌های فنی‌ام برای طراحی ابزارها و راه‌حل‌های نوآورانه برای توسعه آموزشی و اجتماعی لذت می‌برم.",
         "about-3": "همیشه مشتاق یادگیری، رشد و مشارکت در پروژه‌های چندرشته‌ای معنادار هستم که تأثیرگذار باشند.",
         education: "تحصیلات",
@@ -213,7 +226,7 @@ const translations = {
         "exp-6-4": "رونویسی و ترجمه داده‌های گروه‌های کانونی به انگلیسی و تهیه اسناد شرکت‌کنندگان.",
         "exp-6-5": "تکمیل و ارسال گزارش‌ها و فرم‌ها مطابق با الزامات پروژه ASLO.",
         achievements: "پروژه‌ها",
-        "project-link": "🏤 پروژه نمونه",
+        "project-link": "مشاهده پروژه",
         hobbies: "سرگرمی‌ها و علایق",
         "hobby-1": "بدنسازی",
         "hobby-2": "رانندگی",
@@ -273,7 +286,7 @@ const translations = {
         "cert-14": "تدریس و آموزش حرفه‌ای در OSAA-هرات",
         "cert-15": "مهارت‌های مدیریتی در دانشگاه هرات-هرات",
         "cert-16": "مقاله تحت عنوان: تاب‌آوری در آموزش: استراتژی‌های مقابله‌ای دانش‌آموزان افغان در زمان‌های بحران",
-        "cert-17": "مدرس ارشد EFL در WOU",
+        "cert-17": "مدرس ارشد EFL معتبر در WOU",
         "cert-18": "دبیر فنی معتبر در تصدی نشرات آنلاین-WOU",
         contact: "اطلاعات شخصی",
         "contact-email": "آدرس ایمیل",
@@ -293,7 +306,20 @@ const translations = {
         "contact-form-error-email": "لطفاً یک آدرس ایمیل معتبر وارد کنید.",
         "contact-form-success": "پیام با موفقیت ارسال شد!",
         "contact-form-error": "ارسال پیام ناموفق بود. لطفاً دوباره تلاش کنید.",
-        footer: "© 1404 عصمت الله اکبری. تمامی حقوق محفوظ است."
+        footer: "© 1404 عصمت الله اکبری. تمامی حقوق محفوظ است.",
+        "title-resume": "عصمت الله اکبری - رزومه",
+        resume: "رزومه",
+        "nav-resume": "رزومه",
+        "download-resume": "دانلود رزومه",
+        about: "درباره من",
+        "hero-text": "در مسیر حرفه‌ای چندوجهی‌ام در آموزش، توسعه وب و توسعه جامعه، سفرم را کاوش کنید.",
+        "view-resume": "مشاهده رزومه من",
+        "project-1-title": "آکادمی هوپ‌بریج",
+        "project-1-desc": "پلتفرم وب برای منابع آموزشی و تعامل با جامعه.",
+        "project-2-title": "به زودی",
+        "project-2-desc": "منتظر پروژه‌های هیجان‌انگیز بیشتر باشید!",
+        "project-link-soon": "بیشتر بدانید",
+        "dark-mode-toggle": "تغییر حالت تاریک"
     }
 };
 
@@ -301,6 +327,7 @@ const translations = {
 const initLanguage = () => {
     const savedLang = localStorage.getItem('language') || 'en';
     document.documentElement.lang = savedLang;
+    document.documentElement.dir = savedLang === 'fa' ? 'rtl' : 'ltr';
     document.getElementById('language-select').value = savedLang;
     updateContent(savedLang);
 };
@@ -313,9 +340,7 @@ const updateContent = (lang) => {
             element.innerHTML = translations[lang][key];
         }
     });
-    // Update document title
-    const titleKey = document.querySelector('title').getAttribute('data-lang-key');
-    document.title = translations[lang][titleKey] || translations[lang].title;
+    document.title = translations[lang][document.querySelector('title').getAttribute('data-lang-key')] || translations[lang].title;
 };
 
 // Handle Language Change
@@ -323,9 +348,26 @@ const handleLanguageChange = (e) => {
     const lang = e.target.value;
     localStorage.setItem('language', lang);
     document.documentElement.lang = lang;
+    document.documentElement.dir = lang === 'fa' ? 'rtl' : 'ltr';
     updateContent(lang);
-    // Announce language change for accessibility
     showNotification(lang === 'fa' ? 'زبان به فارسی تغییر کرد' : 'Language changed to English', 'success');
+};
+
+// Dark Mode Toggle
+const initDarkMode = () => {
+    const toggleButton = document.querySelector('.dark-mode-toggle');
+    const savedMode = localStorage.getItem('theme') || 'light';
+    if (savedMode === 'dark') {
+        document.documentElement.classList.add('dark-mode');
+        toggleButton.innerHTML = '<i class="fas fa-sun"></i>';
+    }
+    toggleButton.addEventListener('click', () => {
+        document.documentElement.classList.toggle('dark-mode');
+        const isDark = document.documentElement.classList.contains('dark-mode');
+        localStorage.setItem('theme', isDark ? 'dark' : 'light');
+        toggleButton.innerHTML = isDark ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
+        showNotification(isDark ? translations[document.documentElement.lang]['dark-mode-toggle'] : 'Light Mode Enabled', 'success');
+    });
 };
 
 // Show Notification
@@ -355,8 +397,20 @@ const revealSections = () => {
             }
         });
     }, observerOptions);
-
     sections.forEach(section => observer.observe(section));
+};
+
+// Progress Bar Animation
+const animateProgressBars = () => {
+    const progressBars = document.querySelectorAll('.progress-bar');
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.width = entry.target.style.getPropertyValue('--progress');
+            }
+        });
+    }, { threshold: 0.5 });
+    progressBars.forEach(bar => observer.observe(bar));
 };
 
 // Back-to-Top Button
@@ -366,23 +420,11 @@ const initBackToTop = () => {
     button.textContent = document.documentElement.lang === 'fa' ? 'بازگشت به بالا' : 'Back to Top';
     button.setAttribute('aria-label', 'Back to top');
     document.body.appendChild(button);
-
-    const toggleButton = () => {
-        if (window.scrollY > 300) {
-            button.classList.add('visible');
-        } else {
-            button.classList.remove('visible');
-        }
-    };
-
-    window.addEventListener('scroll', debounce(toggleButton, 100));
+    window.addEventListener('scroll', debounce(() => {
+        button.classList.toggle('visible', window.scrollY > 300);
+    }, 100));
     button.addEventListener('click', () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
-
-    // Update button text on language change
-    document.getElementById('language-select').addEventListener('change', () => {
-        button.textContent = document.documentElement.lang === 'fa' ? 'بازگشت به بالا' : 'Back to Top';
     });
 };
 
@@ -390,32 +432,26 @@ const initBackToTop = () => {
 const initForm = () => {
     const form = document.getElementById('contact-form');
     if (!form) return;
-
     form.addEventListener('submit', async (e) => {
         e.preventDefault();
         const lang = document.documentElement.lang;
         const name = form.querySelector('#name').value.trim();
         const email = form.querySelector('#email').value.trim();
         const message = form.querySelector('#message').value.trim();
-
-        // Validation
         if (!name || !email || !message) {
             showNotification(translations[lang]['contact-form-error-empty'], 'error');
             return;
         }
-
         if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
             showNotification(translations[lang]['contact-form-error-email'], 'error');
             return;
         }
-
         try {
             const response = await fetch(form.action, {
                 method: 'POST',
                 headers: { 'Accept': 'application/json' },
                 body: new FormData(form)
             });
-
             if (response.ok) {
                 showNotification(translations[lang]['contact-form-success'], 'success');
                 form.reset();
@@ -423,19 +459,8 @@ const initForm = () => {
                 throw new Error('Form submission failed');
             }
         } catch (error) {
-            console.error('Form submission error:', error);
             showNotification(translations[lang]['contact-form-error'], 'error');
         }
-    });
-};
-
-// Image Error Handling
-const handleImageErrors = () => {
-    document.querySelectorAll('img').forEach(img => {
-        img.addEventListener('error', () => {
-            img.src = 'fallback-image.jpg'; // Ensure you have a fallback image
-            img.alt = document.documentElement.lang === 'fa' ? 'تصویر در دسترس نیست' : 'Image not available';
-        });
     });
 };
 
@@ -443,24 +468,14 @@ const handleImageErrors = () => {
 document.addEventListener('DOMContentLoaded', () => {
     document.body.classList.add('loading');
     setTimeout(() => document.body.classList.remove('loading'), 1000);
-
     initLanguage();
+    initDarkMode();
     document.getElementById('language-select').addEventListener('change', handleLanguageChange);
     revealSections();
+    animateProgressBars();
     initBackToTop();
     initForm();
-    handleImageErrors();
-
-    // Accessibility: Announce page load
-    const announce = document.createElement('div');
-    announce.setAttribute('aria-live', 'polite');
-    announce.style.position = 'absolute';
-    announce.style.left = '-9999px';
-    announce.textContent = document.documentElement.lang === 'fa' ? 'صفحه بارگذاری شد' : 'Page loaded';
-    document.body.appendChild(announce);
-    setTimeout(() => announce.remove(), 1000);
 });
-
 // Handle Window Resize
 window.addEventListener('resize', debounce(() => {
     // Re-apply animations or layout adjustments if needed
