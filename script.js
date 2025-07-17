@@ -34,7 +34,7 @@ const translations = {
         "exp-1-3": "Managed faculty recruitment, development, and performance.",
         "exp-1-4": "Addressed student needs and promoted academic support.",
         "exp-1-5": "Ensured compliance with standards, budgets, and reporting.",
-        "exp-2-title": "Project Field Monitor - IWA - USAID",
+        "exp-2-title": "Field Monitor - IWA - USAID",
         "exp-2-date": "Aug 2024 - Feb 2025",
         "exp-2-1": "Coordinated with authorities and partners for site access and approvals.",
         "exp-2-2": "Conducted field visits to project sites for monitoring and data collection.",
