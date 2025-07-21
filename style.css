@@ -672,6 +672,65 @@ footer {
     backdrop-filter: blur(10px);
 }
 
+.footer p {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    color: #ffffff;
+    font-size: 20px;
+    transition: all 0.3s ease;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.social-icons a:nth-child(1):hover {
+    background-color: #3b5998; /* Facebook Blue */
+}
+
+.social-icons a:nth-child(2):hover {
+    background-color: #0077b5; /* LinkedIn Blue */
+}
+
+.social-icons a:nth-child(3):hover {
+    background-color: #000000; /* X Black */
+}
+
+/* Responsive Design */
+@media (max-width: 760px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .footer p {
+        font-size: 12px;
+    }
+
+    .social-icons a {
+        font-size: 18px;
+        width: 35px;
+        height: 35px;
+    }
+}
+
 /* Back-to-Top Button */
 .back-to-top {
     position: fixed;
