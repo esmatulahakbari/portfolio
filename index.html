@@ -1,15 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="html-lang">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="پرتفولیوی حرفه‌ای عصمت الله اکبری، نمایش‌دهنده تحصیلات، تجربه کاری و مهارت‌های توسعه وب.">
+    <meta name="description" content="Professional portfolio of Esmatullah Akbari, showcasing education, work experience, and web development skills.">
     <meta name="author" content="Esmatullah Akbari">
-    <meta name="keywords" content="توسعه‌دهنده وب, پرتفولیو, عصمت الله اکبری, مهارت‌ها, تماس">
-    <meta name="robots" content="index, follow">
     <title data-lang-key="title">Esmatullah Akbari - Portfolio</title>
     <link rel="icon" type="image/x-icon" href="./favicon.ico">
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Noto+Nastaliq+Urdu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&family=Noto+Nastaliq+Urdu&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./style.css">
 </head>
@@ -18,7 +16,7 @@
         <div class="header-container">
             <h1 data-lang-key="name">Esmatullah Akbari</h1>
             <nav class="nav-container">
-                <button class="hamburger" aria-label="Toggle navigation menu">
+                <button class="hamburger" aria-label="Toggle navigation menu" title="Open navigation menu">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -32,11 +30,11 @@
                 </div>
                 <div class="language-toggle">
                     <select id="language-select" aria-label="Select language">
-                        <option value="en">English</option>
+                        <option value="en" selected>English</option>
                         <option value="fa">فارسی</option>
                     </select>
                 </div>
-                <button class="dark-mode-toggle" aria-label="Toggle dark mode">
+                <button class="dark-mode-toggle" aria-label="Toggle dark mode" title="Switch between light and dark mode">
                     <i class="fas fa-moon"></i>
                 </button>
             </nav>
@@ -50,30 +48,27 @@
         </section>
         <section id="about" class="section-hidden">
             <h2 data-lang-key="about">About Me</h2>
-            <hr>
             <p data-lang-key="about-1">I'm Esmatullah Akbari, a multifaceted professional based in Herat, Afghanistan, with expertise in education, administration, communication, MEAL (Monitoring, Evaluation, Accountability, and Learning), and web development.</p>
             <p data-lang-key="about-2">Alongside my work in education and humanitarian sectors, I’m passionate about technology and have developed skills in web development, creating responsive and user-friendly websites.</p>
             <p data-lang-key="about-3">I'm always eager to learn, grow, and contribute to meaningful, multidisciplinary projects that make a positive impact.</p>
         </section>
         <section id="projects" class="section-hidden">
             <h2 data-lang-key="achievements">Projects</h2>
-            <hr>
             <div class="project-gallery">
                 <div class="project-card">
                     <h3 data-lang-key="project-1-title">HopeBridge Academy</h3>
                     <p data-lang-key="project-1-desc">A web platform for educational resources and community engagement.</p>
-                    <a href="https://hopebridge-academy.github.io/HBA" data-lang-key="project-link" class="cta-button">View Project</a>
+                    <a href="https://hopebridge-academy.github.io/HBA" data-lang-key="project-link" class="cta-button" target="_blank" rel="noopener noreferrer">View Project</a>
                 </div>
                 <div class="project-card">
                     <h3 data-lang-key="project-2-title">Coming Soon</h3>
                     <p data-lang-key="project-2-desc">Stay tuned for more exciting projects!</p>
-                    <a href="#" data-lang-key="project-link-soon" class="cta-button">Learn More</a>
+                    <a href="#" data-lang-key="project-link-soon" class="cta-button disabled" aria-disabled="true">Learn More</a>
                 </div>
             </div>
         </section>
         <section id="hobbies" class="section-hidden">
             <h2 data-lang-key="hobbies">Hobbies & Interests</h2>
-            <hr>
             <ul>
                 <li data-lang-key="hobby-1">Body Building</li>
                 <li data-lang-key="hobby-2">Driving</li>
@@ -83,15 +78,15 @@
     </main>
     <footer class="footer">
         <div class="footer-content">
-            <p data-lang-key="footer">© 2025 Esmatullah Akbari. All rights reserved.</p>
+            <p data-lang-key="footer">© <span id="current-year"></span> Esmatullah Akbari. All rights reserved.</p>
             <div class="social-icons">
-                <a href="https://www.facebook.com/share/1LJPWdtejK/" target="_blank" aria-label="Facebook">
+                <a href="https://www.facebook.com/share/1LJPWdtejK/" target="_blank" rel="noopener noreferrer" aria-label="Visit Esmatullah Akbari's Facebook profile">
                     <i class="fab fa-facebook-f"></i>
                 </a>
-                <a href="https://www.linkedin.com/in/esmatullah-akbari-4aa626300?" target="_blank" aria-label="LinkedIn">
+                <a href="https://www.linkedin.com/in/esmatullah-akbari-4aa626300" target="_blank" rel="noopener noreferrer" aria-label="Visit Esmatullah Akbari's LinkedIn profile">
                     <i class="fab fa-linkedin-in"></i>
                 </a>
-                <a href="https://x.com/Esmatullah88075?t=VGMSp5F6-Rt-ccGD1yjrpA&s=08 " target="_blank" aria-label="X">
+                <a href="https://x.com/Esmatullah88075" target="_blank" rel="noopener noreferrer" aria-label="Visit Esmatullah Akbari's X profile">
                     <i class="fab fa-x"></i>
                 </a>
             </div>
