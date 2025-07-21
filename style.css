@@ -739,7 +739,7 @@ footer {
     background: var(--secondary-color);
     color: white;
     border: none;
-    padding: 8px 10px;
+    padding: 5px 10px;
     border-radius: 8px;
     font-size: 0.95rem;
     font-weight: 600;
