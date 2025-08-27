@@ -24,7 +24,7 @@ const translations = {
         "about-2": "Alongside my work in education and humanitarian sectors, I’m passionate about technology. I’ve developed several websites using HTML, CSS, and JavaScript, and I enjoy using my technical skills to design innovative tools and solutions for educational and community development.",
         "about-3": "I'm always eager to learn, grow, and contribute to meaningful, multidisciplinary projects that make a difference.",
         education: "Education",
-        "edu-1": "Master of Arts, English Language Teaching (ELT) - Persian Gulf University (2025-     ),
+        "edu-1": "Master of Arts, English Language Teaching (ELT) - Persian Gulf University (2025-     )",
         "edu-2": "Bachelor of Arts, English Language & Literature - Faculty of Education, Herat University (2019-2023)<br>Grade: 92% (A)",
         "edu-3": "High School Graduated - Sultan Ghiasuddin Ghori High School (2007-2018)",
         experience: "Work Experience",
@@ -511,6 +511,7 @@ document.addEventListener('DOMContentLoaded', () => {
         form.addEventListener('submit', handleFormSubmit);
     }
 });
+
 
 
 
