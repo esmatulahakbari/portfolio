@@ -49,13 +49,13 @@ const translations = {
         "exp-3-3": "Supported students' language development through feedback and academic guidance.",
         "exp-3-4": "Collaborated with faculty on curriculum design and departmental activities.",
         "exp-3-5": "Assessed student progress and maintained accurate academic records.",
-        "exp-4-title": "Communication Officer - DSON",
+        "exp-4-title": "English & Psychology Trainer - DSON",
         "exp-4-date": "Jan 2023 - Dec 2023",
-        "exp-4-1": "Developed and executed communication strategies aligned with organizational goals.",
-        "exp-4-2": "Created and managed content across social media, reports, newsletters, and the website.",
-        "exp-4-3": "Built media relationships and coordinated press coverage to promote initiatives.",
-        "exp-4-4": "Engaged stakeholders through effective messaging and event communications.",
-        "exp-4-5": "Monitored communication performance and ensured consistent branding.",
+        "exp-4-1": "Designed and delivered English language training programs focusing on grammar, vocabulary, communication, and academic writing for learners of different levels.",
+        "exp-4-2": "Facilitated psychology training sessions covering fundamental concepts such as learning theories, motivation, personality development, and mental health awareness.",
+        "exp-4-3": "Developed training materials, lesson plans, and interactive activities to enhance learner engagement and comprehension.",
+        "exp-4-4": "Assessed and evaluated learners’ progress through quizzes, assignments, and feedback sessions, providing guidance for improvement.",
+        "exp-4-5": "Provided academic and personal mentoring to students, promoting confidence, critical thinking, and effective learning strategies.",
         "exp-5-title": "Community Mobilizer - ASEWO",
         "exp-5-date": "Jan 2022 - Dec 2022",
         "exp-5-1": "Mobilized communities to raise awareness and encourage participation in project activities.",
@@ -206,13 +206,13 @@ const translations = {
         "exp-3-3": "حمایت از پیشرفت زبانی دانشجویان از طریق بازخورد و راهنمایی‌های علمی.",
         "exp-3-4": "همکاری با اعضای هیئت علمی در طراحی برنامه درسی و فعالیت‌های گروهی.",
         "exp-3-5": "ارزیابی پیشرفت دانشجویان و نگهداری سوابق آموزشی دقیق.",
-        "exp-4-title": "مسئول ارتباطات - DSON",
+        "exp-4-title": "مدرس زبان انگلیسی و روان‌شناسی - DSON",
         "exp-4-date": "دی(جدی) 1401 - آذر(قوس) 1402",
-        "exp-4-1": "توسعه و اجرای استراتژی‌های ارتباطی هم‌راستا با اهداف سازمانی.",
-        "exp-4-2": "ایجاد و مدیریت محتوا در رسانه‌های اجتماعی، گزارش‌ها، خبرنامه‌ها و وب‌سایت.",
-        "exp-4-3": "ایجاد روابط رسانه‌ای و هماهنگی پوشش خبری برای تبلیغ ابتکارات.",
-        "exp-4-4": "تعامل با ذینفعان از طریق پیام‌رسانی مؤثر و ارتباطات رویدادها.",
-        "exp-4-5": "نظارت بر عملکرد ارتباطات و اطمینان از برندسازی مداوم.",
+        "exp-4-1": "طراحی و ارائه برنامه‌های آموزشی زبان انگلیسی با تمرکز بر دستور زبان، واژگان، مهارت‌های ارتباطی و نگارش علمی برای زبان‌آموزان در سطوح مختلف.",
+        "exp-4-2": "برگزاری جلسات آموزشی روان‌شناسی با پوشش مفاهیم بنیادی از جمله نظریه‌های یادگیری، انگیزش، رشد شخصیت و آگاهی از سلامت روان.",
+        "exp-4-3": "تدوین مواد آموزشی، طرح درس‌ها و فعالیت‌های تعاملی به‌منظور افزایش مشارکت و درک زبان‌آموزان.",
+        "exp-4-4": "ارزیابی و سنجش پیشرفت زبان‌آموزان از طریق آزمون‌ها، تکالیف و جلسات بازخورد، همراه با ارائه راهنمایی برای بهبود.",
+        "exp-4-5": "ارائه مشاوره علمی و شخصی به زبان‌آموزان با هدف تقویت اعتمادبه‌نفس، تفکر انتقادی و راهبردهای مؤثر یادگیری.",
         "exp-5-title": "موبایلایزر جامعه - ASEWO",
         "exp-5-date": "دی(جدی) 1400 - آذر(قوس) 1401",
         "exp-5-1": "موبایلایز کردن جوامع برای افزایش آگاهی و تشویق مشارکت در فعالیت‌های پروژه.",
@@ -511,6 +511,7 @@ document.addEventListener('DOMContentLoaded', () => {
         form.addEventListener('submit', handleFormSubmit);
     }
 });
+
 
 
 
