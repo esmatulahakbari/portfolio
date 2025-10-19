@@ -24,12 +24,12 @@ const translations = {
         "about-2": "Alongside my work in education and humanitarian sectors, I’m passionate about technology. I’ve developed several websites using HTML, CSS, and JavaScript, and I enjoy using my technical skills to design innovative tools and solutions for educational and community development.",
         "about-3": "I'm always eager to learn, grow, and contribute to meaningful, multidisciplinary projects that make a difference.",
         education: "Education",
-        "edu-1": "Master of Arts, English Language Teaching (ELT) - Persian Gulf University (2025-----)",
+        "edu-1": "Master of Arts, TEFL - Persian Gulf University (2025-----)",
         "edu-2": "Bachelor of Arts, English Language & Literature - Faculty of Education, Herat University (2019-2023)<br>Grade: 92% (A)",
         "edu-3": "High School Graduated - Sultan Ghiasuddin Ghori High School (2007-2018)",
         experience: "Work Experience",
         "exp-1-title": "Head of the English Department & Lecturer - Woman Online University (WOU)",
-        "exp-1-date": "June 2024 - July 2025",
+        "exp-1-date": "June 2024 - Current",
         "exp-1-1": "Led departmental strategy, planning, and operations.",
         "exp-1-2": "Oversaw academic programs and ensured quality delivery.",
         "exp-1-3": "Managed faculty recruitment, development, and performance.",
@@ -186,7 +186,7 @@ const translations = {
         "edu-3": "فارغ‌التحصیل دبیرستان - دبیرستان سلطان غیاث‌الدین غوری (1386-1397)",
         experience: "تجربه کاری",
         "exp-1-title": " آمر دیپارتمنت انگلیسی و مدرس - دانشگاه آنلاین زن (WOU)",
-        "exp-1-date": "خرداد(جورا) 1403 - تیر(سرطان) 1404",
+        "exp-1-date": "خرداد(جورا) 1403 - در جربان ",
         "exp-1-1": "رهبری استراتژی، برنامه‌ریزی و عملیات دیپارتمنت.",
         "exp-1-2": "نظارت بر برنامه‌های آکادمیک و اطمینان از ارائه با کیفیت.",
         "exp-1-3": "مدیریت استخدام، توسعه و عملکرد اعضای هیئت علمی.",
@@ -511,6 +511,7 @@ document.addEventListener('DOMContentLoaded', () => {
         form.addEventListener('submit', handleFormSubmit);
     }
 });
+
 
 
 
