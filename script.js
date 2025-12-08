@@ -136,7 +136,6 @@ const translations = {
         contact: "Personal Information",
         "contact-email": "Email Address",
         "contact-phone": "Phone",
-        "contact-address": "Home Address",
         "contact-whatsapp": "WhatsApp - AF",
         "contact-whatsapp1": "WhatsApp - IR",
         "contact-email": "es.akbari.ak@gmail.com",
@@ -292,9 +291,8 @@ const translations = {
         contact: "اطلاعات شخصی",
         "contact-email": "آدرس ایمیل",
         "contact-phone": "تلفن",
-        "contact-address": "آدرس منزل",
         "contact-whatsapp": " واتساپ افغانستان",
-        "contact-whatsapp": "واتساپ ایران",
+        "contact-whatsapp1": "واتساپ ایران",
         "contact-email": "es.akbari.ak@gmail.com",
         "contact-phone": "+۹۳ ۷۹۲ ۰۱۳ ۵۲۰",
         "contact-form-title": "ارسال پیام",
@@ -509,6 +507,7 @@ document.addEventListener('DOMContentLoaded', () => {
         form.addEventListener('submit', handleFormSubmit);
     }
 });
+
 
 
 
