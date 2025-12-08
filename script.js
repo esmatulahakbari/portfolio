@@ -139,7 +139,7 @@ const translations = {
         "contact-whatsapp": "WhatsApp - AF",
         "contact-whatsapp1": "WhatsApp - IR",
         "contact-email": "es.akbari.ak@gmail.com",
-        "contact-phone": "+93 792 013 520",
+        "contact-phone": "+93 792 013 520/+989928215326",
         "contact-form-title": "Send a Message",
         "contact-form-name": "Name",
         "contact-form-email": "Email",
@@ -294,7 +294,7 @@ const translations = {
         "contact-whatsapp": " واتساپ افغانستان",
         "contact-whatsapp1": "واتساپ ایران",
         "contact-email": "es.akbari.ak@gmail.com",
-        "contact-phone": "+۹۳ ۷۹۲ ۰۱۳ ۵۲۰",
+        "contact-phone": "+۹۳ ۷۹۲ ۰۱۳ ۵۲۰/۹۸۹۹۲۸۲۱۵۳۲۶+",
         "contact-form-title": "ارسال پیام",
         "contact-form-name": "نام",
         "contact-form-email": "ایمیل",
@@ -507,6 +507,7 @@ document.addEventListener('DOMContentLoaded', () => {
         form.addEventListener('submit', handleFormSubmit);
     }
 });
+
 
 
 
