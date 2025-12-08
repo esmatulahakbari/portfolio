@@ -137,11 +137,10 @@ const translations = {
         "contact-email": "Email Address",
         "contact-phone": "Phone",
         "contact-address": "Home Address",
-        "contact-whatsapp": "WhatsApp",
-        "contact-telegram": "Telegram",
+        "contact-whatsapp": "WhatsApp - AF",
+        "contact-whatsapp1": "WhatsApp - IR",
         "contact-email": "es.akbari.ak@gmail.com",
         "contact-phone": "+93 792 013 520",
-        "contact-address": "Herat, Afghanistan",
         "contact-form-title": "Send a Message",
         "contact-form-name": "Name",
         "contact-form-email": "Email",
@@ -294,11 +293,10 @@ const translations = {
         "contact-email": "آدرس ایمیل",
         "contact-phone": "تلفن",
         "contact-address": "آدرس منزل",
-        "contact-whatsapp": "واتساپ",
-        "contact-telegram": "تلگرام",
+        "contact-whatsapp": " واتساپ افغانستان",
+        "contact-whatsapp": "واتساپ ایران",
         "contact-email": "es.akbari.ak@gmail.com",
         "contact-phone": "+۹۳ ۷۹۲ ۰۱۳ ۵۲۰",
-        "contact-address": "هرات، افغانستان",
         "contact-form-title": "ارسال پیام",
         "contact-form-name": "نام",
         "contact-form-email": "ایمیل",
@@ -511,6 +509,7 @@ document.addEventListener('DOMContentLoaded', () => {
         form.addEventListener('submit', handleFormSubmit);
     }
 });
+
 
 
 
