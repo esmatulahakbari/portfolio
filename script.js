@@ -295,8 +295,8 @@ const translations = {
         "contact-whatsapp": " واتساپ افغانستان",
         "contact-whatsapp1": "واتساپ ایران",
         "contact-email": "es.akbari.ak@gmail.com",
-        "contact-phone": "۹۳ ۷۹۲ ۰۱۳ ۵۲۰+",
-        "contact-phone1": "۹۸ ۹۹۲ ۸۲۱ ۵۳۲۶+",
+        "contact-phone": "+۹۳ ۷۹۲ ۰۱۳ ۵۲۰",
+        "contact-phone1": "+۹۸ ۹۹۲ ۸۲۱ ۵۳۲۶",
         "contact-form-title": "ارسال پیام",
         "contact-form-name": "نام",
         "contact-form-email": "ایمیل",
@@ -509,6 +509,7 @@ document.addEventListener('DOMContentLoaded', () => {
         form.addEventListener('submit', handleFormSubmit);
     }
 });
+
 
 
 
