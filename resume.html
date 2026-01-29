@@ -3,15 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="رزومه عصمت الله اکبری، شامل درباره من، تحصیلات، تجربه‌های کاری، مهارت‌ها و گواهینامه‌ها.">
+    <meta name="description" content="رزومه عصمت الله اکبری (Esmatullah Akbari) - شامل تحصیلات، تجربه‌های کاری، مهارت‌ها و گواهینامه‌ها | توسعه‌دهنده وب، متخصص آموزش و MEAL | Herat, Afghanistan | Warsaw">
     <meta name="author" content="Esmatullah Akbari">
-    <meta name="keywords" content="رزومه, عصمت الله اکبری, تحصیلات, تجربه کاری, مهارت‌ها, گواهینامه‌ها">
+    <meta name="keywords" content="Esmatullah Akbari, عصمت‌الله اکبری, resume, رزومه, web developer, education specialist, MEAL expert, Herat, Afghanistan">
     <meta name="robots" content="index, follow">
     <title data-lang-key="title-resume">Esmatullah Akbari - Resume</title>
     <link rel="icon" type="image/x-icon" href="./favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Noto+Nastaliq+Urdu&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./style.css">
+    <!-- استایل‌های اضافی برای resume - بدون تداخل با style.css -->
+    <style>
+        #hero {
+            min-height: 50vh; /* hero کوچکتر برای صفحه رزومه */
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('./images/resume-bg.jpg') center/cover no-repeat; /* عکس پس‌زمینه دلخواه (resume-bg.jpg رو اضافه کن) */
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        #hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        #hero .cta-button {
+            padding: 1rem 2.5rem;
+            font-size: 1.2rem;
+            border-radius: 50px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        #hero .cta-button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+        }
+
+        .resume-section {
+            margin-bottom: 2rem;
+        }
+
+        .resume-section ul {
+            list-style-type: disc;
+            padding-left: 1.5rem;
+        }
+
+        .resume-section li h4 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .resume-section li p {
+            font-style: italic;
+            margin-bottom: 1rem;
+        }
+
+        /* timeline ساده برای تجربه‌ها */
+        .resume-section ul > li {
+            position: relative;
+            padding-left: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .resume-section ul > li::before {
+            content: '';
+            position: absolute;
+            left: 0.5rem;
+            top: 0.5rem;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: var(--primary-color, #007bff); /* رنگ اصلی سایتت */
+        }
+
+        @media (max-width: 768px) {
+            #hero h2 { font-size: 2rem; }
+            #hero .cta-button { font-size: 1rem; padding: 0.8rem 2rem; }
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -43,10 +116,11 @@
         </div>
     </header>
     <main>
-        <section id="resume" class="section-hidden" aria-labelledby="resume-heading">
-            <h2 id="resume-heading" data-lang-key="resume">Resume</h2>
-            <hr>
+        <section id="hero" class="section-hidden">
+            <h2 data-lang-key="resume">My Resume</h2>
             <a href="resume.pdf" download class="cta-button" data-lang-key="download-resume">Download Resume</a>
+        </section>
+        <section id="resume" class="section-hidden" aria-labelledby="resume-heading">
             <div class="resume-section">
                 <h3 data-lang-key="about">About Me</h3>
                 <p data-lang-key="about-1">I'm Esmatullah Akbari, a multifaceted professional based in Herat, Afghanistan, with expertise in education, administration, communication, MEAL (Monitoring, Evaluation, Accountability, and Learning), and web development.</p>
@@ -169,7 +243,3 @@
     <script src="./script.js"></script>
 </body>
 </html>
-
-
-
-
