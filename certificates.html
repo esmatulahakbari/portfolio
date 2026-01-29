@@ -13,57 +13,61 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./style.css">
     <!-- استایل‌های اضافی برای certificates - بدون تداخل با style.css -->
-    <style>
-        #hero {
-            min-height: 50vh; /* hero کوچکتر برای صفحه گواهی‌نامه‌ها */
-            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('./images/certificates-bg.jpg') center/cover no-repeat; /* عکس پس‌زمینه دلخواه (certificates-bg.jpg رو اضافه کن) */
-            color: #fff;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 2rem;
-        }
+<style>
+    /* فقط استایل‌های اختصاصی همین صفحه */
+    #hero {
+        min-height: 50vh;
+        background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                    url('./images/نام-عکس.jpg') center/cover no-repeat;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 2rem;
+    }
 
-        #hero h2 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-        }
+    #hero h2 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
 
-        #certificates ul {
-            list-style-type: none;
-            padding: 0;
-        }
+    #hero .cta-button {
+        background: var(--secondary-color);   /* از متغیرهای style.css استفاده می‌کنه */
+        color: white;
+        padding: 1rem 2.5rem;
+        border-radius: 50px;
+        transition: var(--transition);
+    }
 
-        #certificates ul li {
-            margin-bottom: 1.5rem;
-            padding: 1rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease;
-            display: flex;
-            align-items: center;
-        }
+    #hero .cta-button:hover {
+        background: var(--accent-color);
+        transform: translateY(-5px);
+        box-shadow: var(--shadow);
+    }
 
-        #certificates ul li:hover {
-            transform: translateY(-5px);
-        }
+    /* بقیه استایل‌های خاص صفحه (مثل کارت‌ها، timeline، لیست گواهی و ...) */
+    /* مثلاً برای resume: */
+    .resume-section ul > li {
+        position: relative;
+        padding-left: 2rem;
+        margin-bottom: 2rem;
+    }
 
-        #certificates ul li::before {
-            content: '\f0a3'; /* آیکون گواهی از Font Awesome */
-            font-family: 'Font Awesome 6 Free';
-            font-weight: 900;
-            margin-right: 1rem;
-            color: var(--primary-color, #007bff); /* رنگ اصلی سایتت */
-            font-size: 1.5rem;
-        }
+    .resume-section ul > li::before {
+        content: '';
+        position: absolute;
+        left: 0.5rem;
+        top: 0.5rem;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: var(--secondary-color);
+    }
 
-        @media (max-width: 768px) {
-            #hero h2 { font-size: 2rem; }
-            #certificates ul li { padding: 0.5rem; font-size: 0.9rem; }
-        }
-    </style>
+    /* و همین‌طور برای بقیه */
+</style>
 </head>
 <body>
     <header>
@@ -140,3 +144,4 @@
     <script src="./script.js"></script>
 </body>
 </html>
+
