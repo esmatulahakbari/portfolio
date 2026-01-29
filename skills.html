@@ -3,15 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="بخش مهارت‌های پرتفولیوی عصمت الله اکبری، نمایش‌دهنده مهارت‌های زبانی، توسعه وب، کامپیوتری و سازمانی.">
+    <meta name="description" content="مهارت‌های عصمت‌الله اکبری (Esmatullah Akbari) - زبان‌ها، توسعه وب، مهارت‌های کامپیوتری، سازمانی و آموزشی | پورتفولیو حرفه‌ای | Herat, Afghanistan | Warsaw">
     <meta name="author" content="Esmatullah Akbari">
-    <meta name="keywords" content="توسعه‌دهنده وب, پرتفولیو, عصمت الله اکبری, مهارت‌ها">
+    <meta name="keywords" content="Esmatullah Akbari, عصمت‌الله اکبری, skills, مهارت‌ها, web development, language skills, MEAL, education, Herat, Afghanistan">
     <meta name="robots" content="index, follow">
     <title data-lang-key="title-skills">Esmatullah Akbari - Skills</title>
     <link rel="icon" type="image/x-icon" href="./favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Noto+Nastaliq+Urdu&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./style.css">
+    <!-- استایل‌های اضافی برای skills - بدون تداخل با style.css -->
+    <style>
+        #hero {
+            min-height: 50vh; /* hero کوچکتر برای صفحه مهارت‌ها */
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('./images/skills-bg.jpg') center/cover no-repeat; /* عکس پس‌زمینه دلخواه (skills-bg.jpg رو اضافه کن) */
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        #hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .skills-list > li {
+            margin-bottom: 2rem;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .skills-list > li:hover {
+            transform: translateY(-5px);
+        }
+
+        .skills-list ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .skills-list ul li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.5rem;
+        }
+
+        .rating {
+            color: gold; /* رنگ ستاره‌ها */
+        }
+
+        @media (max-width: 768px) {
+            #hero h2 { font-size: 2rem; }
+            .skills-list > li { padding: 0.5rem; }
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -43,8 +95,10 @@
         </div>
     </header>
     <main>
+        <section id="hero" class="section-hidden">
+            <h2 data-lang-key="skills">My Skills</h2>
+        </section>
         <section id="skills" class="section-hidden" aria-labelledby="skills-heading">
-            <h2 id="skills-heading" data-lang-key="skills">Skills</h2>
             <hr>
             <ul class="skills-list">
                 <li>
