@@ -3,13 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Certificates and achievements of Esmatullah Akbari, showcasing professional qualifications and training.">
+    <meta name="description" content="گواهی‌نامه‌ها و دستاوردهای عصمت‌الله اکبری (Esmatullah Akbari) - شامل آموزش‌های حرفه‌ای، امنیت شبکه، حقوق بشر و توسعه وب | پورتفولیو | Herat, Afghanistan | Warsaw">
     <meta name="author" content="Esmatullah Akbari">
+    <meta name="keywords" content="Esmatullah Akbari, عصمت‌الله اکبری, certificates, گواهی‌نامه‌ها, achievements, professional training, web development, education, MEAL, Herat, Afghanistan">
+    <meta name="robots" content="index, follow">
     <title data-lang-key="title-certificates">Esmatullah Akbari - Certificates</title>
     <link rel="icon" type="image/x-icon" href="./favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&family=Noto+Nastaliq+Urdu&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./style.css">
+    <!-- استایل‌های اضافی برای certificates - بدون تداخل با style.css -->
+    <style>
+        #hero {
+            min-height: 50vh; /* hero کوچکتر برای صفحه گواهی‌نامه‌ها */
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('./images/certificates-bg.jpg') center/cover no-repeat; /* عکس پس‌زمینه دلخواه (certificates-bg.jpg رو اضافه کن) */
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        #hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        #certificates ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        #certificates ul li {
+            margin-bottom: 1.5rem;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            display: flex;
+            align-items: center;
+        }
+
+        #certificates ul li:hover {
+            transform: translateY(-5px);
+        }
+
+        #certificates ul li::before {
+            content: '\f0a3'; /* آیکون گواهی از Font Awesome */
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            margin-right: 1rem;
+            color: var(--primary-color, #007bff); /* رنگ اصلی سایتت */
+            font-size: 1.5rem;
+        }
+
+        @media (max-width: 768px) {
+            #hero h2 { font-size: 2rem; }
+            #certificates ul li { padding: 0.5rem; font-size: 0.9rem; }
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -41,8 +95,10 @@
         </div>
     </header>
     <main>
+        <section id="hero" class="section-hidden">
+            <h2 data-lang-key="certificates">My Certificates & Achievements</h2>
+        </section>
         <section id="certificates" class="section-hidden" aria-labelledby="certificates-heading">
-            <h2 id="certificates-heading" data-lang-key="certificates">Certificates & Achievements</h2>
             <ul aria-label="Professional certificates and achievements">
                 <li data-lang-key="cert-1">Project Team Management & Communication Training at ASEWO-Herat</li>
                 <li data-lang-key="cert-2">Empowering Youth Leaders (ECOSOC) at UN Women-United Nations Office</li>
