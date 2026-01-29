@@ -13,78 +13,61 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./style.css">
     <!-- استایل‌های اضافی برای resume - بدون تداخل با style.css -->
-    <style>
-        #hero {
-            min-height: 50vh; /* hero کوچکتر برای صفحه رزومه */
-            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('./images/resume-bg.jpg') center/cover no-repeat; /* عکس پس‌زمینه دلخواه (resume-bg.jpg رو اضافه کن) */
-            color: #fff;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 2rem;
-        }
+ <style>
+    /* فقط استایل‌های اختصاصی همین صفحه */
+    #hero {
+        min-height: 50vh;
+        background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                    url('./images/نام-عکس.jpg') center/cover no-repeat;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 2rem;
+    }
 
-        #hero h2 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-        }
+    #hero h2 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
 
-        #hero .cta-button {
-            padding: 1rem 2.5rem;
-            font-size: 1.2rem;
-            border-radius: 50px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
+    #hero .cta-button {
+        background: var(--secondary-color);   /* از متغیرهای style.css استفاده می‌کنه */
+        color: white;
+        padding: 1rem 2.5rem;
+        border-radius: 50px;
+        transition: var(--transition);
+    }
 
-        #hero .cta-button:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
-        }
+    #hero .cta-button:hover {
+        background: var(--accent-color);
+        transform: translateY(-5px);
+        box-shadow: var(--shadow);
+    }
 
-        .resume-section {
-            margin-bottom: 2rem;
-        }
+    /* بقیه استایل‌های خاص صفحه (مثل کارت‌ها، timeline، لیست گواهی و ...) */
+    /* مثلاً برای resume: */
+    .resume-section ul > li {
+        position: relative;
+        padding-left: 2rem;
+        margin-bottom: 2rem;
+    }
 
-        .resume-section ul {
-            list-style-type: disc;
-            padding-left: 1.5rem;
-        }
+    .resume-section ul > li::before {
+        content: '';
+        position: absolute;
+        left: 0.5rem;
+        top: 0.5rem;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: var(--secondary-color);
+    }
 
-        .resume-section li h4 {
-            font-size: 1.2rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .resume-section li p {
-            font-style: italic;
-            margin-bottom: 1rem;
-        }
-
-        /* timeline ساده برای تجربه‌ها */
-        .resume-section ul > li {
-            position: relative;
-            padding-left: 2rem;
-            margin-bottom: 2rem;
-        }
-
-        .resume-section ul > li::before {
-            content: '';
-            position: absolute;
-            left: 0.5rem;
-            top: 0.5rem;
-            width: 10px;
-            height: 10px;
-            border-radius: 50%;
-            background: var(--primary-color, #007bff); /* رنگ اصلی سایتت */
-        }
-
-        @media (max-width: 768px) {
-            #hero h2 { font-size: 2rem; }
-            #hero .cta-button { font-size: 1rem; padding: 0.8rem 2rem; }
-        }
-    </style>
+    /* و همین‌طور برای بقیه */
+</style>
 </head>
 <body>
     <header>
@@ -243,3 +226,4 @@
     <script src="./script.js"></script>
 </body>
 </html>
+
