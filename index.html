@@ -11,55 +11,61 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./style.css">
     <!-- استایل‌های اضافی برای hero جدید - بدون تداخل با style.css -->
-    <style>
-        #hero {
-            min-height: 80vh; /* بزرگ‌تر کردن hero */
-            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('./images/hero-bg.jpg') center/cover no-repeat; /* عکس پس‌زمینه دلخواه اضافه کن (فایل hero-bg.jpg رو در images بگذار) */
-            color: #fff;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 2rem;
-            position: relative;
-            overflow: hidden;
-        }
+<style>
+    /* فقط استایل‌های اختصاصی همین صفحه */
+    #hero {
+        min-height: 50vh;
+        background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                    url('./images/نام-عکس.jpg') center/cover no-repeat;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 2rem;
+    }
 
-        #hero h2 {
-            font-size: 3rem; /* بزرگ‌تر */
-            margin-bottom: 1rem;
-            font-weight: 600;
-        }
+    #hero h2 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
 
-        #hero p {
-            font-size: 1.5rem; /* بزرگ‌تر */
-            max-width: 800px;
-            margin-bottom: 2rem;
-            opacity: 0.9;
-        }
+    #hero .cta-button {
+        background: var(--secondary-color);   /* از متغیرهای style.css استفاده می‌کنه */
+        color: white;
+        padding: 1rem 2.5rem;
+        border-radius: 50px;
+        transition: var(--transition);
+    }
 
-        #hero .cta-button {
-            padding: 1rem 2.5rem; /* بزرگ‌تر و جذاب‌تر */
-            font-size: 1.2rem;
-            border-radius: 50px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
+    #hero .cta-button:hover {
+        background: var(--accent-color);
+        transform: translateY(-5px);
+        box-shadow: var(--shadow);
+    }
 
-        #hero .cta-button:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
-        }
+    /* بقیه استایل‌های خاص صفحه (مثل کارت‌ها، timeline، لیست گواهی و ...) */
+    /* مثلاً برای resume: */
+    .resume-section ul > li {
+        position: relative;
+        padding-left: 2rem;
+        margin-bottom: 2rem;
+    }
 
-        /* responsive برای موبایل */
-        @media (max-width: 768px) {
-            #hero h2 { font-size: 2.5rem; }
-            #hero p { font-size: 1.2rem; }
-            #hero .cta-button { font-size: 1rem; padding: 0.8rem 2rem; }
-        }
+    .resume-section ul > li::before {
+        content: '';
+        position: absolute;
+        left: 0.5rem;
+        top: 0.5rem;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: var(--secondary-color);
+    }
 
-        /* انیمیشن ساده fade-in اگر JS هندل می‌کنه، کلاس section-hidden رو نگه می‌داریم */
-    </style>
+    /* و همین‌طور برای بقیه */
+</style>
 </head>
 <body>
     <header>
@@ -145,3 +151,4 @@
     <script src="./script.js"></script>
 </body>
 </html>
+
