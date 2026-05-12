@@ -1,147 +1,220 @@
 <!DOCTYPE html>
-<html lang="en" id="html-lang">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="گواهی‌نامه‌ها و دستاوردهای عصمت‌الله اکبری (Esmatullah Akbari) - شامل آموزش‌های حرفه‌ای، امنیت شبکه، حقوق بشر و توسعه وب | پورتفولیو | Herat, Afghanistan | Warsaw">
-    <meta name="author" content="Esmatullah Akbari">
-    <meta name="keywords" content="Esmatullah Akbari, عصمت‌الله اکبری, certificates, گواهی‌نامه‌ها, achievements, professional training, web development, education, MEAL, Herat, Afghanistan">
-    <meta name="robots" content="index, follow">
-    <title data-lang-key="title-certificates">Esmatullah Akbari - Certificates</title>
-    <link rel="icon" type="image/x-icon" href="./favicon.ico">
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&family=Noto+Nastaliq+Urdu&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./style.css">
-    <!-- استایل‌های اضافی برای certificates - بدون تداخل با style.css -->
-<style>
-    /* فقط استایل‌های اختصاصی همین صفحه */
-    #hero {
-        min-height: 50vh;
-        background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
-                    url('./images/نام-عکس.jpg') center/cover no-repeat;
-        color: white;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        padding: 2rem;
-    }
-
-    #hero h2 {
-        font-size: 2.5rem;
-        margin-bottom: 1rem;
-    }
-
-    #hero .cta-button {
-        background: var(--secondary-color);   /* از متغیرهای style.css استفاده می‌کنه */
-        color: white;
-        padding: 1rem 2.5rem;
-        border-radius: 50px;
-        transition: var(--transition);
-    }
-
-    #hero .cta-button:hover {
-        background: var(--accent-color);
-        transform: translateY(-5px);
-        box-shadow: var(--shadow);
-    }
-
-    /* بقیه استایل‌های خاص صفحه (مثل کارت‌ها، timeline، لیست گواهی و ...) */
-    /* مثلاً برای resume: */
-    .resume-section ul > li {
-        position: relative;
-        padding-left: 2rem;
-        margin-bottom: 2rem;
-    }
-
-    .resume-section ul > li::before {
-        content: '';
-        position: absolute;
-        left: 0.5rem;
-        top: 0.5rem;
-        width: 10px;
-        height: 10px;
-        border-radius: 50%;
-        background: var(--secondary-color);
-    }
-
-    /* و همین‌طور برای بقیه */
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Certificates — Esmatullah Akbari</title>
+  <meta name="description" content="Certificates and achievements of Esmatullah Akbari — University Lecturer, EFL Teacher, Researcher, and Development Professional.">
+  <meta name="author" content="Esmatullah Akbari">
+  <meta name="keywords" content="Esmatullah Akbari, Certificates, Achievements, TEFL, EFL, Training, Herat, Afghanistan">
+  <meta name="robots" content="index, follow">
+  <link rel="icon" type="image/x-icon" href="./favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Sora:wght@300;400;500;600;700&family=Noto+Nastaliq+Urdu&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <header>
-        <div class="header-container">
-            <h1 data-lang-key="name">Esmatullah Akbari</h1>
-            <nav class="nav-container">
-                <button class="hamburger" aria-label="Toggle navigation menu" title="Open navigation menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-                <div class="nav-links">
-                    <a href="index.html" data-lang-key="nav-home" class="nav-link">Home</a>
-                    <a href="resume.html" data-lang-key="nav-resume" class="nav-link">Resume</a>
-                    <a href="skills.html" data-lang-key="nav-skills" class="nav-link">Skills</a>
-                    <a href="certificates.html" data-lang-key="nav-certificates" class="nav-link active">Certificates</a>
-                    <a href="contact.html" data-lang-key="nav-contact" class="nav-link">Contact</a>
-                </div>
-                <div class="language-toggle">
-                    <select id="language-select" aria-label="Select language">
-                        <option value="en" selected>English</option>
-                        <option value="fa">فارسی</option>
-                    </select>
-                </div>
-                <button class="dark-mode-toggle" aria-label="Toggle dark mode" title="Switch between light and dark mode">
-                    <i class="fas fa-moon"></i>
-                </button>
-            </nav>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo" data-lang-key="name">Esmatullah Akbari</a>
+      <nav class="main-nav">
+        <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <div class="nav-links">
+          <a href="index.html" class="nav-link" data-lang-key="nav-home">Home</a>
+          <a href="resume.html" class="nav-link" data-lang-key="nav-resume">Resume</a>
+          <a href="skills.html" class="nav-link" data-lang-key="nav-skills">Skills</a>
+          <a href="certificates.html" class="nav-link active" data-lang-key="nav-certificates">Certificates</a>
+          <a href="contact.html" class="nav-link" data-lang-key="nav-contact">Contact</a>
         </div>
-    </header>
-    <main>
-        <section id="hero" class="section-hidden">
-            <h2 data-lang-key="certificates">My Certificates & Achievements</h2>
-        </section>
-        <section id="certificates" class="section-hidden" aria-labelledby="certificates-heading">
-            <ul aria-label="Professional certificates and achievements">
-                <li data-lang-key="cert-1">Project Team Management & Communication Training at ASEWO-Herat</li>
-                <li data-lang-key="cert-2">Empowering Youth Leaders (ECOSOC) at UN Women-United Nations Office</li>
-                <li data-lang-key="cert-3">Advanced Network Security at AWDP-Herat</li>
-                <li data-lang-key="cert-4">English for Communication Skills at World English Institute-USA</li>
-                <li data-lang-key="cert-5">Human Rights Monitoring at USIP-Herat</li>
-                <li data-lang-key="cert-6">WASH Training (WSP) at DACAAR-Herat</li>
-                <li data-lang-key="cert-7">ICT Training (Ms. PWE) at USAID-AWDP</li>
-                <li data-lang-key="cert-8">Research Methodology Training at IWA-Herat</li>
-                <li data-lang-key="cert-9">English Language Skills at SDROA-USA</li>
-                <li data-lang-key="cert-10">Senior First Grade Talented Students at Herat University</li>
-                <li data-lang-key="cert-11">Computer: ICDL Package at ELCLC Training Center-Herat</li>
-                <li data-lang-key="cert-12">Talented Senior Graduates of Herat University</li>
-                <li data-lang-key="cert-13">Data Collection Methodology at DACAAR-Herat</li>
-                <li data-lang-key="cert-14">Professional Teaching and Training at OSAA-Herat</li>
-                <li data-lang-key="cert-15">Management Skills at Herat University-Herat</li>
-                <li data-lang-key="cert-16">ESSAY Titled: Resilience in Education: Coping Strategies of Afghan Students in Times of Crisis</li>
-                <li data-lang-key="cert-17">Certified Senior EFL Teacher at WOU</li>
-                <li data-lang-key="cert-18">Certified Technical Secretary at Online Publication Authority-WOU</li>
-            </ul>
-        </section>
-    </main>
-    <footer class="footer">
-        <div class="footer-content">
-            <p data-lang-key="footer">© <span id="current-year"></span> Esmatullah Akbari. All rights reserved.</p>
-            <div class="social-icons">
-                <a href="https://www.facebook.com/share/1LJPWdtejK/" target="_blank" rel="noopener noreferrer" aria-label="Visit Esmatullah Akbari's Facebook profile">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/esmatullah-akbari-4aa626300" target="_blank" rel="noopener noreferrer" aria-label="Visit Esmatullah Akbari's LinkedIn profile">
-                    <i class="fab fa-linkedin-in"></i>
-                </a>
-                <a href="https://x.com/Esmatullah88075" target="_blank" rel="noopener noreferrer" aria-label="Visit Esmatullah Akbari's X profile">
-                    <i class="fab fa-x"></i>
-                </a>
-            </div>
+        <div class="header-controls">
+          <select id="language-select" aria-label="Select language">
+            <option value="en">EN</option>
+            <option value="fa">FA</option>
+          </select>
+          <button class="dark-mode-toggle" aria-label="Toggle dark mode"><i class="fas fa-moon"></i></button>
         </div>
-    </footer>    
-    <script src="./script.js"></script>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="certificates" class="section-reveal" aria-labelledby="cert-heading">
+
+      <div class="page-hero">
+        <div class="section-label" data-lang-key="cert-label">Credentials</div>
+        <h2 id="cert-heading" class="section-title" data-lang-key="certificates">Certificates &amp; Achievements</h2>
+        <p class="page-hero-sub" data-lang-key="cert-sub">A record of professional training, academic recognition, and lifelong commitment to learning.</p>
+      </div>
+
+      <div class="cert-grid">
+
+        <div class="cert-card section-reveal">
+          <div class="cert-icon"><i class="fas fa-users"></i></div>
+          <div class="cert-body">
+            <p class="cert-issuer">ASEWO — Herat</p>
+            <h3 data-lang-key="cert-1">Project Team Management &amp; Communication Training</h3>
+          </div>
+        </div>
+
+        <div class="cert-card section-reveal">
+          <div class="cert-icon"><i class="fas fa-globe"></i></div>
+          <div class="cert-body">
+            <p class="cert-issuer">UN Women — United Nations Office</p>
+            <h3 data-lang-key="cert-2">Empowering Youth Leaders (ECOSOC)</h3>
+          </div>
+        </div>
+
+        <div class="cert-card section-reveal">
+          <div class="cert-icon"><i class="fas fa-shield-halved"></i></div>
+          <div class="cert-body">
+            <p class="cert-issuer">AWDP — Herat</p>
+            <h3 data-lang-key="cert-3">Advanced Network Security</h3>
+          </div>
+        </div>
+
+        <div class="cert-card section-reveal">
+          <div class="cert-icon"><i class="fas fa-language"></i></div>
+          <div class="cert-body">
+            <p class="cert-issuer">World English Institute — USA</p>
+            <h3 data-lang-key="cert-4">English for Communication Skills</h3>
+          </div>
+        </div>
+
+        <div class="cert-card section-reveal">
+          <div class="cert-icon"><i class="fas fa-scale-balanced"></i></div>
+          <div class="cert-body">
+            <p class="cert-issuer">USIP — Herat</p>
+            <h3 data-lang-key="cert-5">Human Rights Monitoring</h3>
+          </div>
+        </div>
+
+        <div class="cert-card section-reveal">
+          <div class="cert-icon"><i class="fas fa-droplet"></i></div>
+          <div class="cert-body">
+            <p class="cert-issuer">DACAAR — Herat</p>
+            <h3 data-lang-key="cert-6">WASH Training (WSP)</h3>
+          </div>
+        </div>
+
+        <div class="cert-card section-reveal">
+          <div class="cert-icon"><i class="fas fa-computer"></i></div>
+          <div class="cert-body">
+            <p class="cert-issuer">USAID-AWDP</p>
+            <h3 data-lang-key="cert-7">ICT Training (Ms. PWE)</h3>
+          </div>
+        </div>
+
+        <div class="cert-card section-reveal">
+          <div class="cert-icon"><i class="fas fa-magnifying-glass-chart"></i></div>
+          <div class="cert-body">
+            <p class="cert-issuer">IWA — Herat</p>
+            <h3 data-lang-key="cert-8">Research Methodology Training</h3>
+          </div>
+        </div>
+
+        <div class="cert-card section-reveal">
+          <div class="cert-icon"><i class="fas fa-book"></i></div>
+          <div class="cert-body">
+            <p class="cert-issuer">SDROA — USA</p>
+            <h3 data-lang-key="cert-9">English Language Skills</h3>
+          </div>
+        </div>
+
+        <div class="cert-card featured-cert section-reveal">
+          <div class="cert-icon"><i class="fas fa-trophy"></i></div>
+          <div class="cert-body">
+            <p class="cert-issuer">Herat University</p>
+            <h3 data-lang-key="cert-10">Senior First Grade Talented Student</h3>
+          </div>
+        </div>
+
+        <div class="cert-card section-reveal">
+          <div class="cert-icon"><i class="fas fa-desktop"></i></div>
+          <div class="cert-body">
+            <p class="cert-issuer">ELCLC Training Center — Herat</p>
+            <h3 data-lang-key="cert-11">Computer: ICDL Package</h3>
+          </div>
+        </div>
+
+        <div class="cert-card featured-cert section-reveal">
+          <div class="cert-icon"><i class="fas fa-medal"></i></div>
+          <div class="cert-body">
+            <p class="cert-issuer">Herat University</p>
+            <h3 data-lang-key="cert-12">Talented Senior Graduate</h3>
+          </div>
+        </div>
+
+        <div class="cert-card section-reveal">
+          <div class="cert-icon"><i class="fas fa-database"></i></div>
+          <div class="cert-body">
+            <p class="cert-issuer">DACAAR — Herat</p>
+            <h3 data-lang-key="cert-13">Data Collection Methodology</h3>
+          </div>
+        </div>
+
+        <div class="cert-card section-reveal">
+          <div class="cert-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+          <div class="cert-body">
+            <p class="cert-issuer">OSAA — Herat</p>
+            <h3 data-lang-key="cert-14">Professional Teaching and Training</h3>
+          </div>
+        </div>
+
+        <div class="cert-card section-reveal">
+          <div class="cert-icon"><i class="fas fa-chart-line"></i></div>
+          <div class="cert-body">
+            <p class="cert-issuer">Herat University</p>
+            <h3 data-lang-key="cert-15">Management Skills</h3>
+          </div>
+        </div>
+
+        <div class="cert-card featured-cert section-reveal">
+          <div class="cert-icon"><i class="fas fa-pen-nib"></i></div>
+          <div class="cert-body">
+            <p class="cert-issuer">Published Essay</p>
+            <h3 data-lang-key="cert-16">Resilience in Education: Coping Strategies of Afghan Students in Times of Crisis</h3>
+          </div>
+        </div>
+
+        <div class="cert-card section-reveal">
+          <div class="cert-icon"><i class="fas fa-graduation-cap"></i></div>
+          <div class="cert-body">
+            <p class="cert-issuer">WOU</p>
+            <h3 data-lang-key="cert-17">Certified Senior EFL Teacher</h3>
+          </div>
+        </div>
+
+        <div class="cert-card section-reveal">
+          <div class="cert-icon"><i class="fas fa-file-signature"></i></div>
+          <div class="cert-body">
+            <p class="cert-issuer">Online Publication Authority — WOU</p>
+            <h3 data-lang-key="cert-18">Certified Technical Secretary</h3>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="logo" data-lang-key="name">Esmatullah Akbari</span>
+        <p class="footer-tagline" data-lang-key="footer-tagline">Educator · Researcher · Writer</p>
+      <div class="footer-social">
+        <a href="https://www.facebook.com/share/1LJPWdtejK/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.linkedin.com/in/esmatullah-akbari-4aa626300" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://x.com/Esmatullah88075" target="_blank" rel="noopener" aria-label="X"><i class="fab fa-x"></i></a>
+      </div>
+      <p class="footer-copy" data-lang-key="footer">© 2025 Esmatullah Akbari. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+  <script src="./script.js"></script>
 </body>
 </html>
-
