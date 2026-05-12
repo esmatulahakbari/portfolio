@@ -1,191 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="مهارت‌های عصمت‌الله اکبری (Esmatullah Akbari) - زبان‌ها، توسعه وب، مهارت‌های کامپیوتری، سازمانی و آموزشی | پورتفولیو حرفه‌ای | Herat, Afghanistan | Warsaw">
-    <meta name="author" content="Esmatullah Akbari">
-    <meta name="keywords" content="Esmatullah Akbari, عصمت‌الله اکبری, skills, مهارت‌ها, web development, language skills, MEAL, education, Herat, Afghanistan">
-    <meta name="robots" content="index, follow">
-    <title data-lang-key="title-skills">Esmatullah Akbari - Skills</title>
-    <link rel="icon" type="image/x-icon" href="./favicon.ico">
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Noto+Nastaliq+Urdu&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./style.css">
-    <!-- استایل‌های اضافی برای skills - بدون تداخل با style.css -->
-  <style>
-    /* فقط استایل‌های اختصاصی همین صفحه */
-    #hero {
-        min-height: 50vh;
-        background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
-                    url('./images/نام-عکس.jpg') center/cover no-repeat;
-        color: white;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        padding: 2rem;
-    }
-
-    #hero h2 {
-        font-size: 2.5rem;
-        margin-bottom: 1rem;
-    }
-
-    #hero .cta-button {
-        background: var(--secondary-color);   /* از متغیرهای style.css استفاده می‌کنه */
-        color: white;
-        padding: 1rem 2.5rem;
-        border-radius: 50px;
-        transition: var(--transition);
-    }
-
-    #hero .cta-button:hover {
-        background: var(--accent-color);
-        transform: translateY(-5px);
-        box-shadow: var(--shadow);
-    }
-
-    /* بقیه استایل‌های خاص صفحه (مثل کارت‌ها، timeline، لیست گواهی و ...) */
-    /* مثلاً برای resume: */
-    .resume-section ul > li {
-        position: relative;
-        padding-left: 2rem;
-        margin-bottom: 2rem;
-    }
-
-    .resume-section ul > li::before {
-        content: '';
-        position: absolute;
-        left: 0.5rem;
-        top: 0.5rem;
-        width: 10px;
-        height: 10px;
-        border-radius: 50%;
-        background: var(--secondary-color);
-    }
-
-    /* و همین‌طور برای بقیه */
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skills — Esmatullah Akbari</title>
+  <meta name="description" content="Professional skills of Esmatullah Akbari — language proficiency, web development, academic teaching, MEAL, and organizational competencies.">
+  <meta name="author" content="Esmatullah Akbari">
+  <meta name="keywords" content="Esmatullah Akbari, Skills, TEFL, EFL, Web Development, MEAL, HTML, CSS, JavaScript, ArcGIS, KOBO, Leadership">
+  <meta name="robots" content="index, follow">
+  <link rel="icon" type="image/x-icon" href="./favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Sora:wght@300;400;500;600;700&family=Noto+Nastaliq+Urdu&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <header>
-        <div class="header-container">
-            <h1 data-lang-key="name">Esmatullah Akbari</h1>
-            <nav class="nav-container">
-                <button class="hamburger" aria-label="Toggle navigation menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-                <div class="nav-links">
-                    <a href="index.html" data-lang-key="nav-home" class="nav-link">Home</a>
-                    <a href="resume.html" data-lang-key="nav-resume" class="nav-link">Resume</a>
-                    <a href="skills.html" data-lang-key="nav-skills" class="nav-link active">Skills</a>
-                    <a href="certificates.html" data-lang-key="nav-certificates" class="nav-link">Certificates</a>
-                    <a href="contact.html" data-lang-key="nav-contact" class="nav-link">Contact</a>
-                </div>
-                <div class="language-toggle">
-                    <select id="language-select" aria-label="Select language">
-                        <option value="en">English</option>
-                        <option value="fa">فارسی</option>
-                    </select>
-                </div>
-                <button class="dark-mode-toggle" aria-label="Toggle dark mode">
-                    <i class="fas fa-moon"></i>
-                </button>
-            </nav>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo" data-lang-key="name">Esmatullah Akbari</a>
+      <nav class="main-nav">
+        <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <div class="nav-links">
+          <a href="index.html" class="nav-link" data-lang-key="nav-home">Home</a>
+          <a href="resume.html" class="nav-link" data-lang-key="nav-resume">Resume</a>
+          <a href="skills.html" class="nav-link active" data-lang-key="nav-skills">Skills</a>
+          <a href="certificates.html" class="nav-link" data-lang-key="nav-certificates">Certificates</a>
+          <a href="contact.html" class="nav-link" data-lang-key="nav-contact">Contact</a>
         </div>
-    </header>
-    <main>
-        <section id="hero" class="section-hidden">
-            <h2 data-lang-key="skills">My Skills</h2>
-        </section>
-        <section id="skills" class="section-hidden" aria-labelledby="skills-heading">
-            <hr>
-            <ul class="skills-list">
-                <li>
-                    <h3 data-lang-key="skill-lang-title">Language Skills</h3>
-                    <ul>
-                        <li data-lang-key="skill-lang-1">English <span class="rating" aria-label="5 out of 5 stars">⭐⭐⭐⭐⭐</span></li>
-                        <li data-lang-key="skill-lang-2">Persian <span class="rating" aria-label="5 out of 5 stars">⭐⭐⭐⭐⭐</span></li>
-                        <li data-lang-key="skill-lang-3">Pashto <span class="rating" aria-label="3 out of 5 stars">⭐⭐⭐</span></li>
-                    </ul>
-                </li>
-                <li>
-                    <h3 data-lang-key="skill-web-title">Web Development</h3>
-                    <ul>
-                        <li data-lang-key="skill-web-1">HTML <span class="rating" aria-label="5 out of 5 stars">⭐⭐⭐⭐⭐</span></li>
-                        <li data-lang-key="skill-web-2">CSS <span class="rating" aria-label="4 out of 5 stars">⭐⭐⭐⭐</span></li>
-                        <li data-lang-key="skill-web-3">JavaScript <span class="rating" aria-label="3 out of 5 stars">⭐⭐⭐</span></li>
-                    </ul>
-                </li>
-                <li>
-                    <h3 data-lang-key="skill-comp-title">Computer Skills</h3>
-                    <ul>
-                        <li data-lang-key="skill-comp-1">Microsoft Office <span class="rating" aria-label="4 out of 5 stars">⭐⭐⭐⭐</span></li>
-                        <li data-lang-key="skill-comp-2">SPSS <span class="rating" aria-label="4 out of 5 stars">⭐⭐⭐⭐</span></li>
-                        <li data-lang-key="skill-comp-3">KOBO & ODK <span class="rating" aria-label="5 out of 5 stars">⭐⭐⭐⭐⭐</span></li>
-                        <li data-lang-key="skill-comp-4">ArcGIS <span class="rating" aria-label="5 out of 5 stars">⭐⭐⭐⭐⭐</span></li>
-                    </ul>
-                </li>
-                <li>
-                    <h3 data-lang-key="skill-org-title">Organizational Skills</h3>
-                    <ul>
-                        <li data-lang-key="skill-org-1">Leadership and change management</li>
-                        <li data-lang-key="skill-org-2">Communication and M&E</li>
-                        <li data-lang-key="skill-org-3">Reporting</li>
-                        <li data-lang-key="skill-org-4">Team working and motivating</li>
-                        <li data-lang-key="skill-org-5">Quick learning and Initiating</li>
-                        <li data-lang-key="skill-org-6">Problem solving and coordination</li>
-                        <li data-lang-key="skill-org-7">Flexibility</li>
-                        <li data-lang-key="skill-org-8">Child protection</li>
-                        <li data-lang-key="skill-org-9">Facilitation</li>
-                        <li data-lang-key="skill-org-10">Teaching and Training</li>
-                        <li data-lang-key="skill-org-11">Data Collection, Data analyzing & Data Cleaning</li>
-                        <li data-lang-key="skill-org-12">Researching</li>
-                    </ul>
-                </li>
-                <li>
-                    <h3 data-lang-key="skill-acad-title">Academic & Teaching Skills</h3>
-                    <ul>
-                        <li data-lang-key="skill-acad-1">Curriculum development</li>
-                        <li data-lang-key="skill-acad-2">Lesson planning and delivery for multiple age groups</li>
-                        <li data-lang-key="skill-acad-3">Designing interactive and engaging learning activities</li>
-                        <li data-lang-key="skill-acad-4">Classroom management using non-physical discipline methods</li>
-                        <li data-lang-key="skill-acad-5">Familiarity with bilingual education strategies</li>
-                        <li data-lang-key="skill-acad-6">Adjusting teaching styles based on student age and learning level</li>
-                    </ul>
-                </li>
-                <li>
-                    <h3 data-lang-key="skill-online-title">Online Platforms Skills</h3>
-                    <ul>
-                        <li data-lang-key="skill-online-1">Educational Platforms</li>
-                        <li data-lang-key="skill-online-2">Online Teaching & Presentation</li>
-                        <li data-lang-key="skill-online-3">Professional & Job-Related Platforms</li>
-                    </ul>
-                </li>
-            </ul>
-        </section>
-    </main>
-    <footer class="footer">
-        <div class="footer-content">
-            <p data-lang-key="footer">© 2025 Esmatullah Akbari. All rights reserved.</p>
-            <div class="social-icons">
-                <a href="https://www.facebook.com/share/1LJPWdtejK/" target="_blank" aria-label="Facebook">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/esmatullah-akbari-4aa626300?" target="_blank" aria-label="LinkedIn">
-                    <i class="fab fa-linkedin-in"></i>
-                </a>
-                <a href="https://x.com/Esmatullah88075?t=VGMSp5F6-Rt-ccGD1yjrpA&s=08 " target="_blank" aria-label="X">
-                    <i class="fab fa-x"></i>
-                </a>
+        <div class="header-controls">
+          <select id="language-select" aria-label="Select language">
+            <option value="en">EN</option>
+            <option value="fa">FA</option>
+          </select>
+          <button class="dark-mode-toggle" aria-label="Toggle dark mode"><i class="fas fa-moon"></i></button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="skills" class="section-reveal" aria-labelledby="skills-heading">
+
+      <div class="page-hero">
+        <div class="section-label" data-lang-key="skills-label">Expertise</div>
+        <h2 id="skills-heading" class="section-title" data-lang-key="skills">Skills</h2>
+      </div>
+
+      <!-- Language Skills -->
+      <div class="skill-category section-reveal">
+        <div class="skill-cat-header">
+          <i class="fas fa-language"></i>
+          <h3 data-lang-key="skill-lang-title">Language Skills</h3>
+        </div>
+        <div class="skill-bars">
+          <div class="skill-bar-item">
+            <div class="skill-bar-label">
+              <span data-lang-key="skill-lang-1-name">English</span>
+              <span class="skill-bar-level" data-lang-key="skill-lang-1-level">Native / Fluent</span>
             </div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="100"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-label">
+              <span data-lang-key="skill-lang-2-name">Persian (Dari)</span>
+              <span class="skill-bar-level" data-lang-key="skill-lang-2-level">Native / Fluent</span>
+            </div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="100"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-label">
+              <span data-lang-key="skill-lang-3-name">Pashto</span>
+              <span class="skill-bar-level" data-lang-key="skill-lang-3-level">Intermediate</span>
+            </div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="60"></div></div>
+          </div>
         </div>
-    </footer>    
-    <script src="./script.js"></script>
+      </div>
+
+      <!-- Web Development -->
+      <div class="skill-category section-reveal">
+        <div class="skill-cat-header">
+          <i class="fas fa-code"></i>
+          <h3 data-lang-key="skill-web-title">Web Development</h3>
+        </div>
+        <div class="skill-bars">
+          <div class="skill-bar-item">
+            <div class="skill-bar-label">
+              <span>HTML</span>
+              <span class="skill-bar-level" data-lang-key="level-expert">Expert</span>
+            </div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="96"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-label">
+              <span>CSS</span>
+              <span class="skill-bar-level" data-lang-key="level-advanced">Advanced</span>
+            </div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="90"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-label">
+              <span>JavaScript</span>
+              <span class="skill-bar-level" data-lang-key="level-intermediate">Intermediate</span>
+            </div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="80"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Computer Skills -->
+      <div class="skill-category section-reveal">
+        <div class="skill-cat-header">
+          <i class="fas fa-laptop"></i>
+          <h3 data-lang-key="skill-comp-title">Computer Skills</h3>
+        </div>
+        <div class="skill-bars">
+          <div class="skill-bar-item">
+            <div class="skill-bar-label">
+              <span data-lang-key="skill-comp-1-name">Microsoft Office</span>
+              <span class="skill-bar-level" data-lang-key="level-advanced">Advanced</span>
+            </div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="90"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-label">
+              <span>SPSS</span>
+              <span class="skill-bar-level" data-lang-key="level-advanced">Advanced</span>
+            </div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="85"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-label">
+              <span>KOBO &amp; ODK</span>
+              <span class="skill-bar-level" data-lang-key="level-expert">Expert</span>
+            </div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="96"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-label">
+              <span>ArcGIS</span>
+              <span class="skill-bar-level" data-lang-key="level-expert">Expert</span>
+            </div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="96"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Organizational Skills -->
+      <div class="skill-category section-reveal">
+        <div class="skill-cat-header">
+          <i class="fas fa-sitemap"></i>
+          <h3 data-lang-key="skill-org-title">Organizational Skills</h3>
+        </div>
+        <div class="skill-tags">
+          <span data-lang-key="skill-org-1">Leadership & Change Management</span>
+          <span data-lang-key="skill-org-2">Communication & M&amp;E</span>
+          <span data-lang-key="skill-org-3">Reporting</span>
+          <span data-lang-key="skill-org-4">Team Working & Motivating</span>
+          <span data-lang-key="skill-org-5">Quick Learning & Initiative</span>
+          <span data-lang-key="skill-org-6">Problem Solving & Coordination</span>
+          <span data-lang-key="skill-org-7">Flexibility & Adaptability</span>
+          <span data-lang-key="skill-org-8">Child Protection</span>
+          <span data-lang-key="skill-org-9">Facilitation</span>
+          <span data-lang-key="skill-org-10">Teaching & Training</span>
+          <span data-lang-key="skill-org-11">Data Collection, Analysis & Cleaning</span>
+          <span data-lang-key="skill-org-12">Research & Documentation</span>
+        </div>
+      </div>
+
+      <!-- Academic & Teaching Skills -->
+      <div class="skill-category section-reveal">
+        <div class="skill-cat-header">
+          <i class="fas fa-chalkboard-teacher"></i>
+          <h3 data-lang-key="skill-acad-title">Academic & Teaching Skills</h3>
+        </div>
+        <div class="skill-tags">
+          <span data-lang-key="skill-acad-1">Curriculum Development</span>
+          <span data-lang-key="skill-acad-2">Multi-level Lesson Planning</span>
+          <span data-lang-key="skill-acad-3">Interactive Learning Design</span>
+          <span data-lang-key="skill-acad-4">Classroom Management</span>
+          <span data-lang-key="skill-acad-5">Bilingual Education Strategies</span>
+          <span data-lang-key="skill-acad-6">Adaptive Teaching Styles</span>
+        </div>
+      </div>
+
+      <!-- Online Platforms -->
+      <div class="skill-category section-reveal">
+        <div class="skill-cat-header">
+          <i class="fas fa-cloud"></i>
+          <h3 data-lang-key="skill-online-title">Online Platform Skills</h3>
+        </div>
+        <div class="skill-tags">
+          <span data-lang-key="skill-online-1">Educational Platforms (LMS, Google Classroom)</span>
+          <span data-lang-key="skill-online-2">Online Teaching & Virtual Presentation</span>
+          <span data-lang-key="skill-online-3">Professional Platforms (LinkedIn, Formspree)</span>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="logo" data-lang-key="name">Esmatullah Akbari</span>
+        <p class="footer-tagline" data-lang-key="footer-tagline">Educator · Researcher · Writer</p>
+      <div class="footer-social">
+        <a href="https://www.facebook.com/share/1LJPWdtejK/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.linkedin.com/in/esmatullah-akbari-4aa626300" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://x.com/Esmatullah88075" target="_blank" rel="noopener" aria-label="X"><i class="fab fa-x"></i></a>
+      </div>
+      <p class="footer-copy" data-lang-key="footer">© 2025 Esmatullah Akbari. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+  <script src="./script.js"></script>
 </body>
 </html>
-
