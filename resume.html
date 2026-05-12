@@ -1,229 +1,261 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="رزومه عصمت الله اکبری (Esmatullah Akbari) - شامل تحصیلات، تجربه‌های کاری، مهارت‌ها و گواهینامه‌ها | توسعه‌دهنده وب، متخصص آموزش و MEAL | Herat, Afghanistan | Warsaw">
-    <meta name="author" content="Esmatullah Akbari">
-    <meta name="keywords" content="Esmatullah Akbari, عصمت‌الله اکبری, resume, رزومه, web developer, education specialist, MEAL expert, Herat, Afghanistan">
-    <meta name="robots" content="index, follow">
-    <title data-lang-key="title-resume">Esmatullah Akbari - Resume</title>
-    <link rel="icon" type="image/x-icon" href="./favicon.ico">
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Noto+Nastaliq+Urdu&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./style.css">
-    <!-- استایل‌های اضافی برای resume - بدون تداخل با style.css -->
- <style>
-    /* فقط استایل‌های اختصاصی همین صفحه */
-    #hero {
-        min-height: 50vh;
-        background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
-                    url('./images/نام-عکس.jpg') center/cover no-repeat;
-        color: white;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        padding: 2rem;
-    }
-
-    #hero h2 {
-        font-size: 2.5rem;
-        margin-bottom: 1rem;
-    }
-
-    #hero .cta-button {
-        background: var(--secondary-color);   /* از متغیرهای style.css استفاده می‌کنه */
-        color: white;
-        padding: 1rem 2.5rem;
-        border-radius: 50px;
-        transition: var(--transition);
-    }
-
-    #hero .cta-button:hover {
-        background: var(--accent-color);
-        transform: translateY(-5px);
-        box-shadow: var(--shadow);
-    }
-
-    /* بقیه استایل‌های خاص صفحه (مثل کارت‌ها، timeline، لیست گواهی و ...) */
-    /* مثلاً برای resume: */
-    .resume-section ul > li {
-        position: relative;
-        padding-left: 2rem;
-        margin-bottom: 2rem;
-    }
-
-    .resume-section ul > li::before {
-        content: '';
-        position: absolute;
-        left: 0.5rem;
-        top: 0.5rem;
-        width: 10px;
-        height: 10px;
-        border-radius: 50%;
-        background: var(--secondary-color);
-    }
-    /* و همین‌طور برای بقیه */
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume — Esmatullah Akbari</title>
+  <meta name="description" content="Full professional resume of Esmatullah Akbari — University Lecturer, EFL Teacher, Researcher, and Development Professional.">
+  <meta name="author" content="Esmatullah Akbari">
+  <meta name="keywords" content="Esmatullah Akbari, Resume, CV, University Lecturer, TEFL, EFL, Researcher, Herat, Afghanistan">
+  <meta name="robots" content="index, follow">
+  <link rel="icon" type="image/x-icon" href="./favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Sora:wght@300;400;500;600;700&family=Noto+Nastaliq+Urdu&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <header>
-        <div class="header-container">
-            <h1 data-lang-key="name">Esmatullah Akbari</h1>
-            <nav class="nav-container">
-                <button class="hamburger" aria-label="Toggle navigation menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-                <div class="nav-links">
-                    <a href="index.html" data-lang-key="nav-home" class="nav-link">Home</a>
-                    <a href="resume.html" data-lang-key="nav-resume" class="nav-link active">Resume</a>
-                    <a href="skills.html" data-lang-key="nav-skills" class="nav-link">Skills</a>
-                    <a href="certificates.html" data-lang-key="nav-certificates" class="nav-link">Certificates</a>
-                    <a href="contact.html" data-lang-key="nav-contact" class="nav-link">Contact</a>
-                </div>
-                <div class="language-toggle">
-                    <select id="language-select" aria-label="Select language">
-                        <option value="en">English</option>
-                        <option value="fa">فارسی</option>
-                    </select>
-                </div>
-                <button class="dark-mode-toggle" aria-label="Toggle dark mode">
-                    <i class="fas fa-moon"></i>
-                </button>
-            </nav>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo" data-lang-key="name">Esmatullah Akbari</a>
+      <nav class="main-nav">
+        <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <div class="nav-links">
+          <a href="index.html" class="nav-link" data-lang-key="nav-home">Home</a>
+          <a href="resume.html" class="nav-link active" data-lang-key="nav-resume">Resume</a>
+          <a href="skills.html" class="nav-link" data-lang-key="nav-skills">Skills</a>
+          <a href="certificates.html" class="nav-link" data-lang-key="nav-certificates">Certificates</a>
+          <a href="contact.html" class="nav-link" data-lang-key="nav-contact">Contact</a>
         </div>
-    </header>
-    <main>
-        <section id="hero" class="section-hidden">
-            <h2 data-lang-key="resume">My Resume</h2>
-            <a href="resume.pdf" download class="cta-button" data-lang-key="download-resume">Download Resume</a>
-        </section>
-        <section id="resume" class="section-hidden" aria-labelledby="resume-heading">
-            <div class="resume-section">
-                <h3 data-lang-key="about">About Me</h3>
-                <p data-lang-key="about-1">I'm Esmatullah Akbari, a multifaceted professional based in Herat, Afghanistan, with expertise in education, administration, communication, MEAL (Monitoring, Evaluation, Accountability, and Learning), and web development.</p>
-                <p data-lang-key="about-2">Alongside my work in education and humanitarian sectors, I’m passionate about technology and have developed skills in web development, creating responsive and user-friendly websites.</p>
-                <p data-lang-key="about-3">I'm always eager to learn, grow, and contribute to meaningful, multidisciplinary projects that make a positive impact.</p>
-            </div>
-            <div class="resume-section">
-                <h3 data-lang-key="education">Education</h3>
-                <ul>
-                    <li data-lang-key="edu-1">Master of Arts, TEFL - Persian Gulf University (2025-    )</li>
-                    <li data-lang-key="edu-2">Bachelor of Arts, English Language & Literature - Herat University (2019-2023)<br>Grade: 92% (A)</li>
-                    <li data-lang-key="edu-3">High School Graduated - Sultan Ghiasuddin Ghori High School (2007-2018)</li>
-                </ul>
-            </div>
-            <div class="resume-section">
-                <h3 data-lang-key="experience">Work Experience</h3>
-                <ul>
-                    <li>
-                        <h4 data-lang-key="exp-1-title">Head of the English Department & Lecturer - Woman Online University WOU</h4>
-                        <p data-lang-key="exp-1-date">June 2024 - Current </p>
-                        <ul>
-                            <li data-lang-key="exp-1-1">Led departmental strategy, planning, and operations.</li>
-                            <li data-lang-key="exp-1-2">Oversaw academic programs and ensured quality delivery.</li>
-                            <li data-lang-key="exp-1-3">Managed faculty recruitment, development, and performance.</li>
-                            <li data-lang-key="exp-1-4">Addressed student needs and promoted academic support.</li>
-                            <li data-lang-key="exp-1-5">Ensured compliance with standards, budgets, and reporting.</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <h4 data-lang-key="exp-2-title">Project Field Monitor - IWA - USAID</h4>
-                        <p data-lang-key="exp-2-date">Aug 2024 - Feb 2025</p>
-                        <ul>
-                            <li data-lang-key="exp-2-1">Coordinated with authorities and partners for site access and approvals.</li>
-                            <li data-lang-key="exp-2-2">Conducted field visits to project sites for monitoring and data collection.</li>
-                            <li data-lang-key="exp-2-3">Used digital tools to collect, translate, and enter qualitative and quantitative data.</li>
-                            <li data-lang-key="exp-2-4">Ensured data accuracy, completeness, and confidentiality following protocols.</li>
-                            <li data-lang-key="exp-2-5">Reported issues and followed guidance from project and data quality leads.</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <h4 data-lang-key="exp-3-title">EFL Teacher - Herat University</h4>
-                        <p data-lang-key="exp-3-date">Jan 2024 - Jul 2024</p>
-                        <ul>
-                            <li data-lang-key="exp-3-1">Planned and delivered engaging English language lessons to undergraduate students.</li>
-                            <li data-lang-key="exp-3-2">Developed course materials and assessments aligned with curriculum goals.</li>
-                            <li data-lang-key="exp-3-3">Supported students' language development through feedback and academic guidance.</li>
-                            <li data-lang-key="exp-3-4">Collaborated with faculty on curriculum design and departmental activities.</li>
-                            <li data-lang-key="exp-3-5">Assessed student progress and maintained accurate academic records.</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <h4 data-lang-key="exp-4-title">English & Psychology Trainer - DSON</h4>
-                        <p data-lang-key="exp-4-date">Jan 2023 - Dec 2023</p>
-                        <ul>
-                            <li data-lang-key="exp-4-1">Designed and delivered English language training programs focusing on grammar, vocabulary, communication, and academic writing for learners of different levels.</li>
-                            <li data-lang-key="exp-4-2">Facilitated psychology training sessions covering fundamental concepts such as learning theories, motivation, personality development, and mental health awareness.</li>
-                            <li data-lang-key="exp-4-3">Developed training materials, lesson plans, and interactive activities to enhance learner engagement and comprehension.</li>
-                            <li data-lang-key="exp-4-4">Assessed and evaluated learners’ progress through quizzes, assignments, and feedback sessions, providing guidance for improvement.</li>
-                            <li data-lang-key="exp-4-5">Provided academic and personal mentoring to students, promoting confidence, critical thinking, and effective learning strategies.</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <h4 data-lang-key="exp-5-title">Community Mobilizer - ASEWO</h4>
-                        <p data-lang-key="exp-5-date">Jan 2022 - Dec 2022</p>
-                        <ul>
-                            <li data-lang-key="exp-5-1">Mobilized communities to raise awareness and encourage participation in project activities.</li>
-                            <li data-lang-key="exp-5-2">Supervised Community Facilitators to ensure effective implementation at the village level.</li>
-                            <li data-lang-key="exp-5-3">Collected and reported data using digital tools like ODK/KOBO for informed decision-making.</li>
-                            <li data-lang-key="exp-5-4">Supported formation of community structures, with a focus on women's participation and leadership.</li>
-                            <li data-lang-key="exp-5-5">Coordinated with local stakeholders and ensured compliance with village-level governance structures.</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <h4 data-lang-key="exp-6-title">Research Officer - ASLO</h4>
-                        <p data-lang-key="exp-6-date">June 2021 - Dec 2021</p>
-                        <ul>
-                            <li data-lang-key="exp-6-1">Participated in training to understand project objectives and data collection tools.</li>
-                            <li data-lang-key="exp-6-2">Coordinated with local authorities and communities for conducting FGDs in Salma Dam area.</li>
-                            <li data-lang-key="exp-6-3">Collected qualitative data through FGDs, including photos, audio, and video documentation.</li>
-                            <li data-lang-key="exp-6-4">Transcribed and translated FGD data into English and prepared participant documentation.</li>
-                            <li data-lang-key="exp-6-5">Completed and submitted reports and forms in line with ASLO project requirements.</li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            <div class="resume-section">
-                <h3 data-lang-key="skills">Skills</h3>
-                <ul class="skills-list">
-                    <li>
-                        <a href="skills.html" data-lang-key="nav-skills" class="cta-button">Skills</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="resume-section">
-                <h3 data-lang-key="certificates">Certificates & Achievements</h3>
-                <ul class="skills-list">
-                    <li>
-                        <a href="certificates.html" data-lang-key="nav-certificates" class="cta-button">Certificates</a>
-                    </li>
-                </ul>
-            </div>
-        </section>
-    </main>
-    <footer class="footer">
-        <div class="footer-content">
-            <p data-lang-key="footer">© 2025 Esmatullah Akbari. All rights reserved.</p>
-            <div class="social-icons">
-                <a href="https://www.facebook.com/share/1LJPWdtejK/" target="_blank" aria-label="Facebook">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/esmatullah-akbari-4aa626300?" target="_blank" aria-label="LinkedIn">
-                    <i class="fab fa-linkedin-in"></i>
-                </a>
-                <a href="https://x.com/Esmatullah88075?t=VGMSp5F6-Rt-ccGD1yjrpA&s=08 " target="_blank" aria-label="X">
-                    <i class="fab fa-x"></i>
-                </a>
-            </div>
+        <div class="header-controls">
+          <select id="language-select" aria-label="Select language">
+            <option value="en">EN</option>
+            <option value="fa">FA</option>
+          </select>
+          <button class="dark-mode-toggle" aria-label="Toggle dark mode"><i class="fas fa-moon"></i></button>
         </div>
-    </footer>    
-    <script src="./script.js"></script>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section id="resume" class="section-reveal" aria-labelledby="resume-heading">
+      <div class="page-hero">
+        <div class="section-label" data-lang-key="resume-label">CV</div>
+        <h2 id="resume-heading" class="section-title" data-lang-key="resume">Resume</h2>
+        <a href="resume.pdf" download class="btn btn-primary" data-lang-key="download-resume">
+          <i class="fas fa-download"></i> Download Resume
+        </a>
+      </div>
+
+      <!-- About -->
+      <div class="resume-block">
+        <div class="resume-block-header">
+          <i class="fas fa-user"></i>
+          <h3 data-lang-key="about">About</h3>
+        </div>
+        <div class="resume-block-body prose">
+          <p data-lang-key="about-1">Esmatullah Akbari is a dedicated university lecturer, EFL teacher, and development professional based in Herat, Afghanistan. With a Bachelor of Arts in English Language & Literature from Herat University (graduating with a 92% distinction) and currently advancing toward a Master's in Teaching English as a Foreign Language (TEFL), he has built a distinguished career at the intersection of education, research, and humanitarian work.</p>
+          <p data-lang-key="about-2">As Head of the English Department at Woman Online University (WOU), Esmatullah has led academic strategy, oversaw faculty development, and championed access to quality education. Alongside this, he has served as a Field Monitor for IWA-USAID, a Communication Officer, and a Research Officer — applying rigorous MEAL frameworks and data collection methods to real-world development challenges.</p>
+          <p data-lang-key="about-3">A skilled writer and curriculum designer, Esmatullah brings multilingual fluency (English, Persian, and Pashto) and technical expertise in web development to every endeavor. His life's work is making a lasting positive impact through education, research, and community empowerment.</p>
+        </div>
+      </div>
+
+      <!-- Education -->
+      <div class="resume-block">
+        <div class="resume-block-header">
+          <i class="fas fa-graduation-cap"></i>
+          <h3 data-lang-key="education">Education</h3>
+        </div>
+        <div class="resume-block-body">
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <div class="timeline-meta">
+                  <span class="timeline-date">2025 – 2027</span>
+                  <span class="timeline-badge">___</span>
+                </div>
+                <h4 data-lang-key="edu-3-title">Master of Arts, TEFL</h4>
+                <p class="timeline-place" data-lang-key="edu-3-place">Faculty of Literature & Humanities, Persian Gulf University</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <div class="timeline-meta">
+                  <span class="timeline-date">2019 – 2023</span>
+                  <span class="timeline-badge">92% — A</span>
+                </div>
+                <h4 data-lang-key="edu-1-title">Bachelor of Arts, English Language & Literature</h4>
+                <p class="timeline-place" data-lang-key="edu-1-place">Faculty of Education, Herat University</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <div class="timeline-meta">
+                  <span class="timeline-date">2007 – 2018</span>
+                </div>
+                <h4 data-lang-key="edu-2-title">High School Graduate</h4>
+                <p class="timeline-place" data-lang-key="edu-2-place">Sultan Ghiasuddin Ghori High School</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Experience -->
+      <div class="resume-block">
+        <div class="resume-block-header">
+          <i class="fas fa-briefcase"></i>
+          <h3 data-lang-key="experience">Work Experience</h3>
+        </div>
+        <div class="resume-block-body">
+          <div class="timeline">
+
+            <div class="timeline-item">
+              <div class="timeline-dot accent"></div>
+              <div class="timeline-content">
+                <div class="timeline-meta">
+                  <span class="timeline-date" data-lang-key="exp-1-date">June 2024 – May 2026</span>
+                </div>
+                <h4 data-lang-key="exp-1-title">Head of English Department & Lecturer — WOU</h4>
+                <ul class="exp-list">
+                  <li data-lang-key="exp-1-1">Led departmental strategy, planning, and operations.</li>
+                  <li data-lang-key="exp-1-2">Oversaw academic programs and ensured quality delivery.</li>
+                  <li data-lang-key="exp-1-3">Managed faculty recruitment, development, and performance.</li>
+                  <li data-lang-key="exp-1-4">Addressed student needs and promoted academic support.</li>
+                  <li data-lang-key="exp-1-5">Ensured compliance with standards, budgets, and reporting.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <div class="timeline-meta">
+                  <span class="timeline-date" data-lang-key="exp-2-date">Aug 2024 – Feb 2025</span>
+                </div>
+                <h4 data-lang-key="exp-2-title">Project Field Monitor — IWA / USAID</h4>
+                <ul class="exp-list">
+                  <li data-lang-key="exp-2-1">Coordinated with authorities and partners for site access and approvals.</li>
+                  <li data-lang-key="exp-2-2">Conducted field visits to project sites for monitoring and data collection.</li>
+                  <li data-lang-key="exp-2-3">Used digital tools to collect, translate, and enter qualitative and quantitative data.</li>
+                  <li data-lang-key="exp-2-4">Ensured data accuracy, completeness, and confidentiality following protocols.</li>
+                  <li data-lang-key="exp-2-5">Reported issues and followed guidance from project and data quality leads.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <div class="timeline-meta">
+                  <span class="timeline-date" data-lang-key="exp-3-date">Jan 2024 – Jul 2024</span>
+                </div>
+                <h4 data-lang-key="exp-3-title">Lecturer – Faculty of Education — Herat University</h4>
+                <ul class="exp-list">
+                  <li data-lang-key="exp-3-1">Delivered structured English language lectures to undergraduate students.</li>
+                  <li data-lang-key="exp-3-2">Designed lesson plans, assessments and academic materials.</li>
+                  <li data-lang-key="exp-3-3">Supported students through feedback, mentoring and academic guidance.</li>
+                  <li data-lang-key="exp-3-4">Participated in curriculum development and departmental activities.</li>
+                  <li data-lang-key="exp-3-5">Evaluated student performance and maintained academic records.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <div class="timeline-meta">
+                  <span class="timeline-date" data-lang-key="exp-4-date">Jan 2023 – Dec 2023</span>
+                </div>
+                <h4 data-lang-key="exp-4-title">Communication Officer — DSON</h4>
+                <ul class="exp-list">
+                  <li data-lang-key="exp-4-1">Developed and executed communication strategies aligned with organizational goals.</li>
+                  <li data-lang-key="exp-4-2">Created and managed content across social media, reports, newsletters, and the website.</li>
+                  <li data-lang-key="exp-4-3">Built media relationships and coordinated press coverage.</li>
+                  <li data-lang-key="exp-4-4">Engaged stakeholders through effective messaging and event communications.</li>
+                  <li data-lang-key="exp-4-5">Monitored communication performance and ensured consistent branding.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <div class="timeline-meta">
+                  <span class="timeline-date" data-lang-key="exp-5-date">Jan 2022 – Dec 2022</span>
+                </div>
+                <h4 data-lang-key="exp-5-title">Community Mobilizer — ASEWO</h4>
+                <ul class="exp-list">
+                  <li data-lang-key="exp-5-1">Mobilized communities to raise awareness and encourage project participation.</li>
+                  <li data-lang-key="exp-5-2">Supervised Community Facilitators at the village level.</li>
+                  <li data-lang-key="exp-5-3">Collected and reported data using ODK/KOBO digital tools.</li>
+                  <li data-lang-key="exp-5-4">Supported formation of community structures with focus on women's leadership.</li>
+                  <li data-lang-key="exp-5-5">Coordinated with local stakeholders and governance structures.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <div class="timeline-meta">
+                  <span class="timeline-date" data-lang-key="exp-6-date">June 2021 – Dec 2021</span>
+                </div>
+                <h4 data-lang-key="exp-6-title">Research Officer — ASLO</h4>
+                <ul class="exp-list">
+                  <li data-lang-key="exp-6-1">Participated in training to understand project objectives and data collection tools.</li>
+                  <li data-lang-key="exp-6-2">Coordinated with local authorities for FGDs in the Salma Dam area.</li>
+                  <li data-lang-key="exp-6-3">Collected qualitative data through FGDs, including audio and video documentation.</li>
+                  <li data-lang-key="exp-6-4">Transcribed and translated FGD data into English.</li>
+                  <li data-lang-key="exp-6-5">Completed and submitted reports in line with ASLO project requirements.</li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Skills & Certs links -->
+      <div class="resume-links-row">
+        <a href="skills.html" class="resume-link-card">
+          <i class="fas fa-star"></i>
+          <span data-lang-key="nav-skills">Skills</span>
+          <i class="fas fa-arrow-right small"></i>
+        </a>
+        <a href="certificates.html" class="resume-link-card">
+          <i class="fas fa-certificate"></i>
+          <span data-lang-key="nav-certificates">Certificates</span>
+          <i class="fas fa-arrow-right small"></i>
+        </a>
+      </div>
+
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="logo" data-lang-key="name">Esmatullah Akbari</span>
+        <p class="footer-tagline" data-lang-key="footer-tagline">Educator · Researcher · Writer</p>
+      <div class="footer-social">
+        <a href="https://www.facebook.com/share/1LJPWdtejK/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.linkedin.com/in/esmatullah-akbari-4aa626300" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://x.com/Esmatullah88075" target="_blank" rel="noopener" aria-label="X"><i class="fab fa-x"></i></a>
+      </div>
+      <p class="footer-copy" data-lang-key="footer">© 2025 Esmatullah Akbari. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+  <script src="./script.js"></script>
 </body>
 </html>
-
-
