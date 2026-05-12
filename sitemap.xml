@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- Home -->
+  <url>
+    <loc>https://esmatulahakbari.github.io/EA/index.html</loc>
+    <lastmod>2025-05-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://esmatullahakbari.com/index.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://esmatullahakbari.com/index.html"/>
+  </url>
+
+  <!-- Resume -->
+  <url>
+    <loc>https://esmatulahakbari.github.io/EA/resume.html</loc>
+    <lastmod>2025-05-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://esmatullahakbari.com/resume.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://esmatullahakbari.com/resume.html"/>
+  </url>
+
+  <!-- Skills -->
+  <url>
+    <loc>https://esmatulahakbari.github.io/EA/skills.html</loc>
+    <lastmod>2025-05-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://esmatullahakbari.com/skills.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://esmatullahakbari.com/skills.html"/>
+  </url>
+
+  <!-- Certificates -->
+  <url>
+    <loc>https://esmatulahakbari.github.io/EA/certificates.html</loc>
+    <lastmod>2025-05-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://esmatullahakbari.com/certificates.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://esmatullahakbari.com/certificates.html"/>
+  </url>
+
+  <!-- Contact -->
+  <url>
+    <loc>https://esmatulahakbari.github.io/EA/contact.html</loc>
+    <lastmod>2025-05-12</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://esmatullahakbari.com/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://esmatullahakbari.com/contact.html"/>
+  </url>
+
+</urlset>
