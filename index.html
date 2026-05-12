@@ -1,154 +1,201 @@
 <!DOCTYPE html>
-<html lang="en" id="html-lang">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Professional portfolio of Esmatullah Akbari, showcasing education, work experience, and web development skills.">
-    <meta name="author" content="Esmatullah Akbari">
-    <title data-lang-key="title">Esmatullah Akbari - Portfolio</title>
-    <link rel="icon" type="image/x-icon" href="./favicon.ico">
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&family=Noto+Nastaliq+Urdu&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./style.css">
-    <!-- استایل‌های اضافی برای hero جدید - بدون تداخل با style.css -->
-<style>
-    /* فقط استایل‌های اختصاصی همین صفحه */
-    #hero {
-        min-height: 50vh;
-        background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
-                    url('./images/نام-عکس.jpg') center/cover no-repeat;
-        color: white;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        padding: 2rem;
-    }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Esmatullah Akbari</title>
+  <meta name="description" content="Esmatullah Akbari — University Lecturer, MA in TEFL, EFL Teacher, Researcher, Writer, and Development Professional based in Herat, Afghanistan.">
+  <meta name="author" content="Esmatullah Akbari">
+  <meta name="keywords" content="Esmatullah Akbari, University Lecturer, TEFL, EFL Teacher, Researcher, Writer, Herat, Afghanistan, Education, Web Developer, Humanitarian, MEAL">
+  <meta name="robots" content="index, follow">
 
-    #hero h2 {
-        font-size: 2.5rem;
-        margin-bottom: 1rem;
-    }
+  <!-- Open Graph -->
+  <meta property="og:title" content="Esmatullah Akbari">
+  <meta property="og:description" content="University Lecturer · MA in TEFL · EFL Teacher · Researcher · Writer · Development Professional">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://esmatullahakbari.com">
 
-    #hero .cta-button {
-        background: var(--secondary-color);   /* از متغیرهای style.css استفاده می‌کنه */
-        color: white;
-        padding: 1rem 2.5rem;
-        border-radius: 50px;
-        transition: var(--transition);
-    }
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Esmatullah Akbari",
+    "jobTitle": "University Lecturer & EFL Teacher",
+    "description": "University Lecturer, MA in TEFL, EFL Teacher, Researcher, Writer, and Development Professional",
+    "url": "https://esmatullahakbari.com",
+    "sameAs": [
+      "https://www.linkedin.com/in/esmatullah-akbari-4aa626300",
+      "https://x.com/Esmatullah88075",
+      "https://www.facebook.com/share/1LJPWdtejK/"
+    ]
+  }
+  </script>
 
-    #hero .cta-button:hover {
-        background: var(--accent-color);
-        transform: translateY(-5px);
-        box-shadow: var(--shadow);
-    }
-
-    /* بقیه استایل‌های خاص صفحه (مثل کارت‌ها، timeline، لیست گواهی و ...) */
-    /* مثلاً برای resume: */
-    .resume-section ul > li {
-        position: relative;
-        padding-left: 2rem;
-        margin-bottom: 2rem;
-    }
-
-    .resume-section ul > li::before {
-        content: '';
-        position: absolute;
-        left: 0.5rem;
-        top: 0.5rem;
-        width: 10px;
-        height: 10px;
-        border-radius: 50%;
-        background: var(--secondary-color);
-    }
-
-    /* و همین‌طور برای بقیه */
-</style>
+  <link rel="icon" type="image/x-icon" href="./favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Sora:wght@300;400;500;600;700&family=Noto+Nastaliq+Urdu&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <header>
-        <div class="header-container">
-            <h1 data-lang-key="name">Esmatullah Akbari</h1>
-            <nav class="nav-container">
-                <button class="hamburger" aria-label="Toggle navigation menu" title="Open navigation menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-                <div class="nav-links">
-                    <a href="index.html" data-lang-key="nav-home" class="nav-link active">Home</a>
-                    <a href="resume.html" data-lang-key="nav-resume" class="nav-link">Resume</a>
-                    <a href="skills.html" data-lang-key="nav-skills" class="nav-link">Skills</a>
-                    <a href="certificates.html" data-lang-key="nav-certificates" class="nav-link">Certificates</a>
-                    <a href="contact.html" data-lang-key="nav-contact" class="nav-link">Contact</a>
-                </div>
-                <div class="language-toggle">
-                    <select id="language-select" aria-label="Select language">
-                        <option value="en" selected>English</option>
-                        <option value="fa">فارسی</option>
-                    </select>
-                </div>
-                <button class="dark-mode-toggle" aria-label="Toggle dark mode" title="Switch between light and dark mode">
-                    <i class="fas fa-moon"></i>
-                </button>
-            </nav>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo" data-lang-key="name">Esmatullah Akbari</a>
+      <nav class="main-nav">
+        <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <div class="nav-links">
+          <a href="index.html" class="nav-link active" data-lang-key="nav-home">Home</a>
+          <a href="resume.html" class="nav-link" data-lang-key="nav-resume">Resume</a>
+          <a href="skills.html" class="nav-link" data-lang-key="nav-skills">Skills</a>
+          <a href="certificates.html" class="nav-link" data-lang-key="nav-certificates">Certificates</a>
+          <a href="contact.html" class="nav-link" data-lang-key="nav-contact">Contact</a>
         </div>
-    </header>
-    <main>
-        <section id="hero" class="section-hidden">
-            <h2 data-lang-key="welcome">Welcome to My Portfolio</h2>
-            <p data-lang-key="hero-text">Explore my journey as a multifaceted professional in education, web development, and community development.</p>
-            <a href="resume.html" class="cta-button" data-lang-key="view-resume">View My Resume</a>
-        </section>
-        <section id="about" class="section-hidden">
-            <h2 data-lang-key="about">About Me</h2>
-            <p data-lang-key="about-1">I'm Esmatullah Akbari, a multifaceted professional based in Herat, Afghanistan, with expertise in education, administration, communication, MEAL (Monitoring, Evaluation, Accountability, and Learning), and web development.</p>
-            <p data-lang-key="about-2">Alongside my work in education and humanitarian sectors, I’m passionate about technology and have developed skills in web development, creating responsive and user-friendly websites.</p>
-            <p data-lang-key="about-3">I'm always eager to learn, grow, and contribute to meaningful, multidisciplinary projects that make a positive impact.</p>
-        </section>
-        <section id="projects" class="section-hidden">
-            <h2 data-lang-key="achievements">Projects</h2>
-            <div class="project-gallery">
-                <div class="project-card">
-                    <h3 data-lang-key="project-1-title">HopeBridge Academy</h3>
-                    <p data-lang-key="project-1-desc">A web platform for educational resources and community engagement.</p>
-                    <a href="https://hopebridge-academy.github.io/HBA" data-lang-key="project-link" class="cta-button" target="_blank" rel="noopener noreferrer">View Project</a>
-                </div>
-                <div class="project-card">
-                    <h3 data-lang-key="project-2-title">Coming Soon</h3>
-                    <p data-lang-key="project-2-desc">Stay tuned for more exciting projects!</p>
-                    <a href="#" data-lang-key="project-link-soon" class="cta-button disabled" aria-disabled="true">Learn More</a>
-                </div>
-            </div>
-        </section>
-        <section id="hobbies" class="section-hidden">
-            <h2 data-lang-key="hobbies">Hobbies & Interests</h2>
-            <ul>
-                <li data-lang-key="hobby-1">Body Building</li>
-                <li data-lang-key="hobby-2">Driving</li>
-                <li data-lang-key="hobby-3">Reading Books</li>
-            </ul>
-        </section>
-    </main>
-    <footer class="footer">
-        <div class="footer-content">
-            <p data-lang-key="footer">© <span id="current-year"></span> Esmatullah Akbari. All rights reserved.</p>
-            <div class="social-icons">
-                <a href="https://www.facebook.com/share/1LJPWdtejK/" target="_blank" rel="noopener noreferrer" aria-label="Visit Esmatullah Akbari's Facebook profile">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/esmatullah-akbari-4aa626300" target="_blank" rel="noopener noreferrer" aria-label="Visit Esmatullah Akbari's LinkedIn profile">
-                    <i class="fab fa-linkedin-in"></i>
-                </a>
-                <a href="https://x.com/Esmatullah88075" target="_blank" rel="noopener noreferrer" aria-label="Visit Esmatullah Akbari's X profile">
-                    <i class="fab fa-x"></i>
-                </a>
-            </div>
+        <div class="header-controls">
+          <select id="language-select" aria-label="Select language">
+            <option value="en">EN</option>
+            <option value="fa">FA</option>
+          </select>
+          <button class="dark-mode-toggle" aria-label="Toggle dark mode">
+            <i class="fas fa-moon"></i>
+          </button>
         </div>
-    </footer>    
-    <script src="./script.js"></script>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section id="hero" class="section-reveal">
+      <div class="hero-content">
+        <p class="hero-eyebrow" data-lang-key="hero-eyebrow">Educator · Researcher · Writer</p>
+        <h1 class="hero-name" data-lang-key="name">Esmatullah Akbari</h1>
+        <p class="hero-sub" data-lang-key="hero-text">University Lecturer, EFL Teacher, Development Professional & Researcher based in Herat, Afghanistan — bridging education, technology, and community development.</p>
+        <div class="hero-ctas">
+          <a href="resume.html" class="btn btn-primary" data-lang-key="view-resume">View Resume</a>
+          <a href="contact.html" class="btn btn-outline" data-lang-key="nav-contact">Get in Touch</a>
+        </div>
+        <div class="hero-tags">
+          <span data-lang-key="tag-1">MA in TEFL</span>
+          <span data-lang-key="tag-2">EFL Teacher</span>
+          <span data-lang-key="tag-3">MEAL Expert</span>
+          <span data-lang-key="tag-4">Web Developer</span>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-card">
+          <div class="hero-avatar-wrap">
+            <div class="hero-avatar-ring"></div>
+            <div class="hero-avatar-initials">EA</div>
+          </div>
+          <div class="hero-stats">
+            <div class="stat"><span class="stat-num">6+</span><span class="stat-label" data-lang-key="stat-years">Years Experience</span></div>
+            <div class="stat"><span class="stat-num">18+</span><span class="stat-label" data-lang-key="stat-certs">Certificates</span></div>
+            <div class="stat"><span class="stat-num">3</span><span class="stat-label" data-lang-key="stat-langs">Languages</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section-reveal">
+      <div class="section-label" data-lang-key="about-label">About</div>
+      <h2 class="section-title" data-lang-key="about">About Esmatullah</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p data-lang-key="about-1">Esmatullah Akbari is a dedicated university lecturer, EFL teacher, and development professional based in Herat, Afghanistan. With a Bachelor of Arts in English Language & Literature from Herat University (graduating with a 92% distinction) and currently advancing toward a Master's in Teaching English as a Foreign Language (TEFL), he has built a distinguished career at the intersection of education, research, and humanitarian work.</p>
+          <p data-lang-key="about-2">As Head of the English Department at Woman Online University (WOU), Esmatullah has led academic strategy, oversaw faculty development, and championed access to quality education. Alongside this, he has served as a Field Monitor for IWA-USAID, a Communication Officer, and a Research Officer — applying rigorous MEAL frameworks and data collection methods to real-world development challenges.</p>
+          <p data-lang-key="about-3">A skilled writer and curriculum designer, Esmatullah brings multilingual fluency (English, Persian, and Pashto) and technical expertise in web development to every endeavor. His life's work is making a lasting positive impact through education, research, and community empowerment.</p>
+        </div>
+        <div class="about-highlights">
+          <div class="highlight-card">
+            <i class="fas fa-graduation-cap"></i>
+            <h3 data-lang-key="hl-1-title">Academic Leader</h3>
+            <p data-lang-key="hl-1-desc">Head of English Department · BA with 92% Distinction · Pursuing MA in TEFL</p>
+          </div>
+          <div class="highlight-card">
+            <i class="fas fa-globe"></i>
+            <h3 data-lang-key="hl-2-title">Development Professional</h3>
+            <p data-lang-key="hl-2-desc">MEAL · Edu · CM · TT · CALL</p>
+          </div>
+          <div class="highlight-card">
+            <i class="fas fa-pen-nib"></i>
+            <h3 data-lang-key="hl-3-title">Researcher & Writer</h3>
+            <p data-lang-key="hl-3-desc">Published essay on Afghan student resilience · Research Methodology trained</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section-reveal">
+      <div class="section-label" data-lang-key="proj-label">Work</div>
+      <h2 class="section-title" data-lang-key="achievements">Projects</h2>
+      <div class="project-grid">
+        <div class="project-card featured">
+          <div class="project-card-inner">
+            <div class="project-badge" data-lang-key="proj-live">Live</div>
+            <h3 data-lang-key="project-1-title">HopeBridge Academy</h3>
+            <p data-lang-key="project-1-desc">A web platform dedicated to educational resources, community engagement, and bridging learning gaps in underserved communities.</p>
+            <a href="https://hopebridge-academy.github.io/HBA" target="_blank" rel="noopener" class="btn btn-primary" data-lang-key="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+          </div>
+          <div class="project-card-bg"></div>
+        </div>
+        <div class="project-card">
+          <div class="project-card-inner">
+            <div class="project-badge coming" data-lang-key="proj-soon">Soon</div>
+            <h3 data-lang-key="project-2-title">Coming Soon</h3>
+            <p data-lang-key="project-2-desc">New projects in development. Stay tuned for more impactful work in education and technology.</p>
+            <a href="#" class="btn btn-outline" data-lang-key="project-link-soon">Learn More</a>
+          </div>
+          <div class="project-card-bg alt"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hobbies -->
+    <section id="hobbies" class="section-reveal">
+      <div class="section-label" data-lang-key="hobbies-label">Personal</div>
+      <h2 class="section-title" data-lang-key="hobbies">Hobbies & Interests</h2>
+      <div class="hobby-list">
+        <div class="hobby-item">
+          <i class="fas fa-dumbbell"></i>
+          <span data-lang-key="hobby-1">Body Building</span>
+        </div>
+        <div class="hobby-item">
+          <i class="fas fa-car"></i>
+          <span data-lang-key="hobby-2">Driving</span>
+        </div>
+        <div class="hobby-item">
+          <i class="fas fa-book-open"></i>
+          <span data-lang-key="hobby-3">Reading Books</span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="logo" data-lang-key="name">Esmatullah Akbari</span>
+        <p class="footer-tagline" data-lang-key="footer-tagline">Educator · Researcher · Writer</p>
+      </div>
+      <div class="footer-social">
+        <a href="https://www.facebook.com/share/1LJPWdtejK/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.linkedin.com/in/esmatullah-akbari-4aa626300" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://x.com/Esmatullah88075" target="_blank" rel="noopener" aria-label="X"><i class="fab fa-x"></i></a>
+      </div>
+      <p class="footer-copy" data-lang-key="footer">© 2025-2026 Esmatullah Akbari. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+  <script src="./script.js"></script>
 </body>
 </html>
-
